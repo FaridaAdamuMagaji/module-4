@@ -87,7 +87,7 @@ router.put("/flowers/:id", upload.single("image"), async (req, res) => {
 // DELETE a flower by ID
 router.delete("/flowers/:id", async (req, res) => {
     try {
-        const deletedFlower = await Flower.findByIdAndDelete(req.params.id);
+        cons t deletedFlower = await Flower.findByIdAndDelete(req.params.id);
         if (!deletedFlower) {
             return res.status(404).json({ message: "Flower not found" });
         }
