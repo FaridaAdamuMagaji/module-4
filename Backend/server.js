@@ -16,6 +16,11 @@ app.use("/assets", express.static(path.join(__dirname, "assets"))); // Serve upl
 // Routes
 app.use("/api", flowerRoutes);
 
+//Route route
+app.get('/', (req, res) => {
+    res.send('Hello, world! Backend is running!');
+    });
+
 
 const mongo= 'mongodb+srv://faridaadamumagaji:ORVooYt83cHv1DF4@flower.vuwuq.mongodb.net/?retryWrites=true&w=majority&appName=flower';
 mongoose.connect(mongo)
