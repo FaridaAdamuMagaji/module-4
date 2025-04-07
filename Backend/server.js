@@ -16,7 +16,7 @@ app.use("/assets", express.static(path.join(__dirname, "assets"))); // Serve upl
 // Routes
 app.use("/api", flowerRoutes);
 
-//Route route
+//Root route
 app.get('/', (req, res) => {
     res.send('Hello, world! Backend is running!');
     });
