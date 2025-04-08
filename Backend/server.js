@@ -14,7 +14,7 @@ app.use(express.json());
 app.use("/assets", express.static(path.join(__dirname, "assets"))); // Serve uploaded images
 
 // Routes
-app.use("/api/flowers", flowerRoutes);
+app.use("/api", flowerRoutes);
 
 
 
