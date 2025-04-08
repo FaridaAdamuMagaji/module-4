@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
     });
 
 
-const mongo= 'mongodb+srv://faridaadamumagaji:ORVooYt83cHv1DF4@flower.vuwuq.mongodb.net/?retryWrites=true&w=majority&appName=flower';
+const mongo = process.env.MONGO_URI;
 mongoose.connect(mongo)
     .then(() => console.log('MongoDB connected successfully'))
     .catch(err => console.error('MongoDB connection error:', err));
