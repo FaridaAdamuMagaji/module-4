@@ -16,6 +16,8 @@ app.use("/assets", express.static(path.join(__dirname, "assets"))); // Serve upl
 // Routes
 app.use("/api", flowerRoutes);
 
+
+
 //Root route
 app.get('/', (req, res) => {
     res.send('Hello, world! Backend is running!');
@@ -23,9 +25,19 @@ app.get('/', (req, res) => {
 
 
 const mongo = process.env.MONGO_URI;
-mongoose.connect(mongo)
+/*mongoose.connect(mongo)
     .then(() => console.log('MongoDB connected successfully'))
     .catch(err => console.error('MongoDB connection error:', err));
+*/
+
+mongoose.connect(mongo, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 30000, // Increase timeout to 30 seconds
+    socketTimeoutMS: 30000, // Increase socket timeout to 30 seconds
+})
+.then(() => console.log('MongoDB connected successfully'))
+.catch(err => console.error('MongoDB connection error:', err));
 
 module.exports = mongoose;
 
