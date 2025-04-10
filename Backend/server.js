@@ -16,6 +16,8 @@ app.use("/assets", express.static(path.join(__dirname, "assets"))); // Serve upl
 // Routes
 app.use("/api", flowerRoutes);
 
+
+
 //Root route
 app.get('/', (req, res) => {
     res.send('Hello, world! Backend is running!');
@@ -27,7 +29,6 @@ mongoose.connect(mongo)
     .then(() => console.log('MongoDB connected successfully'))
     .catch(err => console.error('MongoDB connection error:', err));
 
-module.exports = mongoose;
 
 
 // Start the server
