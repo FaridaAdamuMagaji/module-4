@@ -98,6 +98,7 @@ mongoose.connect(mongo)
 // Optional: Fetch all users (for admin/debug, not recommended in production)
 const User = require('./models/user');
 app.get('/users', async (req, res) => {
+  console.log("GET /users hit");
   try {
     const users = await User.find({}, '-password'); // omit password field
     res.status(200).json(users);
