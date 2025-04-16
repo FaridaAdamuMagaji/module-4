@@ -107,6 +107,11 @@ app.get('/users', async (req, res) => {
   }
 });
 
+app.get('/test', (req, res) => {
+  res.send('Test route working!');
+});
+
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
