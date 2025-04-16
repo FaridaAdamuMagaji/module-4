@@ -70,7 +70,7 @@ const cors = require("cors");
 const path = require("path");
 
 const flowerRoutes = require('./routes/flowerRoutes');
-const authRoutes = require('../routes/authRoutes');
+const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
