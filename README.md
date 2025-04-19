@@ -14,7 +14,7 @@
 
 
 ## overview
-The Flower Delivery Website is an e-commerce platform that allows users to browse, select, and order flowers for delivery. The website provides a seamless shopping experience with a user-friendly interface, various flower arrangements, and secure checkout options.
+The Flower Delivery Website is an e-commerce platform that allows users to browse, select, and order flowers for delivery created using node.js and express.js. The website provides a seamless shopping experience with a user-friendly interface, various flower arrangements, and secure checkout options. 
 
 
 ## Presentation <a name="Presentation"></a>
