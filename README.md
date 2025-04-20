@@ -8,9 +8,8 @@
 6 - [Technologies Used](#technologies-used)
 7 - [Setup and Installation](#setup-and-installation)
 8 - [Usage](#usage)
-9 - [Screenshots](#screenshots)
-10 - [License](#license)
-11- [Author(s)](#authors)
+9 - [License](#license)
+10- [Author(s)](#authors)
 
 
 ## overview
