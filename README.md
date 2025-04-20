@@ -8,9 +8,8 @@
 6 - [Technologies Used](#technologies-used)
 7 - [Setup and Installation](#setup-and-installation)
 8 - [Usage](#usage)
-9 - [Screenshots](#screenshots)
-10 - [License](#license)
-11- [Author(s)](#authors)
+9 - [License](#license)
+10- [Author(s)](#authors)
 
 
 ## overview
@@ -18,14 +17,16 @@ The Flower Delivery Website is an e-commerce platform that allows users to brows
 
 
 ## Presentation <a name="Presentation"></a>
-- [Presentation Link] (https://www.loom.com/share/556679a1d7d84445825bc5de336a2bd6?sid=4b1e6c85-1cd4-478f-bae3-c71a027974a0)
+- [Presentation Link]  (https://www.loom.com/share/556679a1d7d84445825bc5de336a2bd6?sid=4b1e6c85-1cd4-478f-bae3-c71a027974a0)
+
 
 
 ## Live-demo 
 -Checkout the live Demo of the project: [Live Demo] 
--To GET all flowers (https://flowerrs.onrender.com/api/flowers)
+-To GET all flowers (https://flower-module.onrender.com/api/flowers)
 
--To GET all users (https://flowerrs.onrender.com/users)
+-To GET all users (https://flower-module.onrender.com/users)
+
 
 ## Technologies used
 Backend: Node.js, Express.js
