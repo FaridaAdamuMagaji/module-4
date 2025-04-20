@@ -17,9 +17,12 @@ The Flower Delivery Website is an e-commerce platform that allows users to brows
 
 
 ## Presentation <a name="Presentation"></a>
-- [Presentation Link](https://flower-module.onrender.com)
+- [Presentation Link]
+-To GET all flowers (https://flower-module.onrender.com/api/flowers)
 
-Checkout the Live Demo of this project: [Live Demo]()
+-To GET all users (https://flower-module.onrender.com/users)
+
+
 ## Live-demo 
 -Checkout the live Demo of the project: [Live Demo](https://www.loom.com/share/556679a1d7d84445825bc5de336a2bd6?sid=4b1e6c85-1cd4-478f-bae3-c71a027974a0)
 
