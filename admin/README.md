@@ -1,12 +1,77 @@
-# React + Vite
+# 🌸 Flower Delivery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Fverview
+A full-stack web application for managing and delivering flowers.  
+The app allows admins to add, view, and manage flowers (with images, categories, prices, and descriptions) while customers can browse flowers for delivery.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🌼 **Flower Management**: Add and delete flowers with image uploads.  
+- 🖼 **Image Uploads**: Upload flower images directly from your device.  
+- 🛒 **Customer Browsing**: Customers can view available flowers and details.  
+- 🔐 **User Authentication**: Secure signup and login for admins and users.  
+- 🎨 **Responsive UI**: Clean and responsive design built with React.  
+- 📦 **Backend API**: Built with Express.js and MongoDB for fast and scalable data storage.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Presentation <a name="Presentation"></a>
+- [Presentation Link] ()
+
+## Live-demo 
+-Checkout the live Demo of the project: [Live Demo] 
+-To GET all flowers (https://flowerrs.onrender.com/api/flowers)
+
+-To GET all users (https://flowerrs.onrender.com/users)
+
+
+
+## Technologies used
+
+### Frontend
+- React.js
+- React Router DOM
+- CSS (custom styles)
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- Multer (for image uploads)
+- Bcrypt + JWT (for authentication)
+
+### Setup instructions
+
+
+**Clone the repository
+```bash
+git clone https://github.com/FaridaAdamuMagaji/module-4.git 
+cd flower-delivery-app
+**Navigate to the project folder:**
+```bash 
+cd module
+```
+**Install dependencies**:
+npm install
+
+**Start the development server**:
+cd admin
+npm run dev (if using vite)
+
+## usage 
+Navigate to /flowers to see all flowers.
+Navigate to /add-flower to add a new flower (admin only).
+Upload an image and fill in flower details.
+Success/failure messages are shown as popups.
+
+
+## License
+This project is licensed under the MIT License. 
+## Author
+- **Name:**Farida Adamu Magaji
+-**Email:**faridaadamumagaji@gmail.com
+-**GitHub:**[FaridaAdamuMagaji]( https://github.com/FaridaAdamuMagaji)
+
+

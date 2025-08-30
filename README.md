@@ -8,12 +8,12 @@
 6 - [Technologies Used](#technologies-used)
 7 - [Setup and Installation](#setup-and-installation)
 8 - [Usage](#usage)
-9 - [Screenshots](#screenshots)
-10 - [License](#license)
-11- [Author(s)](#authors)
+9 - [License](#license)
+10- [Author(s)](#authors)
 
 
 ## overview
+The Flower Delivery Website is an e-commerce platform that allows users to browse, select, and order flowers for delivery created using node.js and express.js. The website provides a seamless shopping experience with a user-friendly interface, various flower arrangements, and secure checkout options. 
 The Flower Delivery Website is an e-commerce platform that allows users to browse, select, and order flowers for delivery created using node.js and express.js. The website provides a seamless shopping experience with a user-friendly interface, various flower arrangements, and secure checkout options. 
 
 
@@ -22,6 +22,11 @@ The Flower Delivery Website is an e-commerce platform that allows users to brows
 
 
 ## Live-demo 
+-Checkout the live Demo of the project: [Live Demo] 
+-To GET all flowers (https://flower-module.onrender.com/api/flowers)
+
+-To GET all users (https://flower-module.onrender.com/users)
+
 -Checkout the live Demo of the project: [Live Demo] 
 -To GET all flowers (https://flowerrs.onrender.com/api/flowers)
 
@@ -45,10 +50,14 @@ Fully responsive design
  User model with fields: name, email, password, and cart data
  registerUser for user sign-up with validation and password hashing
 loginUser for credential verification and JWT issuance
+ User model with fields: name, email, password, and cart data
+ registerUser for user sign-up with validation and password hashing
+loginUser for credential verification and JWT issuance
 
 ## Setup instructions
 Clone the repository:
 ```bash 
+git clone https://github.com/FaridaAdamuMagaji/module-4.git 
 git clone https://github.com/FaridaAdamuMagaji/module-4.git 
 
 **Navigate to the project folder:**

@@ -25,7 +25,7 @@ function Flowers() {
         </nav>
       </div>
       
-        <hr></hr>
+      <hr></hr>
       {flowers.length === 0 ? (
         <p>No flowers added yet.</p>
       ) : (
