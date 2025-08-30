@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Flowers() {
   const [flowers, setFlowers] = useState([]);
@@ -12,8 +13,19 @@ function Flowers() {
 
   return (
     <div>
-      <h1><p>Admin Panel</p></h1>
+      <div className="head">
+        <p className="admin">Admin Panel</p>
+        <nav id='navig'>
+              <Link to="/flowers">
+                <button className="flow">Flowers</button>
+              </Link>
+              <Link to="/add-flower">
+                <button className="add">Add Flower</button>
+              </Link>
+        </nav>
+      </div>
       
+        <hr></hr>
       {flowers.length === 0 ? (
         <p>No flowers added yet.</p>
       ) : (
@@ -25,32 +37,36 @@ function Flowers() {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
-                marginBottom: "15px",
-                background: "#f9f9f9"
+                marginBottom: "35px",
+                marginTop: "18px",
+                
               }}
             >
               {flower.image && (
                 <img 
                   src={`https://flowerrs.onrender.com${flower.image}`} 
                   alt={flower.name} 
-                  style={{ width: "200px", borderRadius: "8px", marginLeft: "20px" }}
+                  style={{ width: "200px", marginRight: "15px" }}
                 />
               )}
               <div style={{ flex: 1 }}>
-                <h3>Name: {flower.name}</h3>
-                <p>Category: {flower.category}</p>
-                <p>Price: ${flower.price}</p>
-                <p>Description: {flower.description}</p>
+                <p><span className="datum">Name:</span> {flower.name}</p> <br></br>
+                <p><span className="datum">Category:</span> {flower.category}</p><br></br>
+                <p><span className="datum">Price:</span> ${flower.price}</p><br></br>
+                <p><span className="datum">Description:</span> {flower.description}</p>
               </div>
               
             </li>
           ))}
         </ul>
       )}
-      <p>Flower Delivery Website</p><br></br>
-      <p>Created for ELEVATEHer innovation space LTD</p><br></br>
-      <p>BY</p><br></br>
-      <p>FARIDA ADAMU MAGAJI</p>
+      <div className="end">
+        <p>FLOWER DELIVERY APP</p>
+        <p>Created for ElevateHER Innovation Space Ltd</p>
+        <p>By</p>
+        <p>FARIDA ADAMU MAGAJI</p>
+      </div>
+      
     </div>
   );
 }
