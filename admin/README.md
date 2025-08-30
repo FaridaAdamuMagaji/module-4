@@ -1,4 +1,4 @@
-# 🌸 Flower Delivery App
+# Flower Delivery App
 
 ## Fverview
 A full-stack web application for managing and delivering flowers.  
@@ -22,9 +22,7 @@ The app allows admins to add, view, and manage flowers (with images, categories,
 
 ## Live-demo 
 -Checkout the live Demo of the project: [Live Demo] 
--To GET all flowers (https://flowerrs.onrender.com/api/flowers)
-
--To GET all users (https://flowerrs.onrender.com/users)
+http://localhost:5173/ 
 
 
 

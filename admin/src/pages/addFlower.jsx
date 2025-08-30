@@ -60,7 +60,6 @@ function AddFlower() {
 
   return (
     <div>
-      {/* Popup message */}
       {popup.show && (
         <div
           style={{

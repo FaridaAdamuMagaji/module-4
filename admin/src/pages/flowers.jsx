@@ -43,17 +43,16 @@ function Flowers() {
               }}
             >
               {flower.image && (
-                <img 
+                <img className="serene"
                   src={`https://flowerrs.onrender.com${flower.image}`} 
                   alt={flower.name} 
-                  style={{ width: "200px", marginRight: "15px" }}
                 />
               )}
-              <div style={{ flex: 1 }}>
-                <p><span className="datum">Name:</span> {flower.name}</p> <br></br>
-                <p><span className="datum">Category:</span> {flower.category}</p><br></br>
-                <p><span className="datum">Price:</span> ${flower.price}</p><br></br>
-                <p><span className="datum">Description:</span> {flower.description}</p>
+              <div id="spat" style={{ flex: 1 }}>
+                <p className="spa"><span className="datum">Name:</span> {flower.name}</p>
+                <p className="spa"><span className="datum">Category:</span> {flower.category}</p>
+                <p className="spa"><span className="datum">Price:</span> ${flower.price}</p>
+                <p className="spa"><span className="datum">Description:</span> {flower.description}</p>
               </div>
               
             </li>
