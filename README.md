@@ -55,7 +55,6 @@ loginUser for credential verification and JWT issuance
 Clone the repository:
 ```bash 
 git clone https://github.com/FaridaAdamuMagaji/module-4.git 
-git clone https://github.com/FaridaAdamuMagaji/module-4.git 
 
 **Navigate to the project folder:**
 ```bash 

@@ -31,7 +31,7 @@ function Flowers() {
       ) : (
         <ul style={{ listStyle: "none", padding: 0 }}>
           {flowers.map((flower) => {
-  console.log("Flower image URL:", flower.image); // 👈 just log, not return
+  console.log("Flower image URL:", flower.image); 
   return (
     <li key={flower._id} 
         style={{
