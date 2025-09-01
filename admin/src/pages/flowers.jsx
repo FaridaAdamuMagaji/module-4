@@ -30,33 +30,33 @@ function Flowers() {
         <p>No flowers added yet.</p>
       ) : (
         <ul style={{ listStyle: "none", padding: 0 }}>
-          {flowers.map((flower) => (
-            <li 
-              key={flower._id} 
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                marginBottom: "35px",
-                marginTop: "18px",
-                
-              }}
-            >
-              {flower.image && (
-                <img className="serene"
-                  src={flower.image} 
-                  alt={flower.name} 
-                />
-              )}
-              <div id="spat" style={{ flex: 1 }}>
-                <p className="spa"><span className="datum">Name:</span> {flower.name}</p>
-                <p className="spa"><span className="datum">Category:</span> {flower.category}</p>
-                <p className="spa"><span className="datum">Price:</span> ${flower.price}</p>
-                <p className="spa"><span className="datum">Description:</span> {flower.description}</p>
-              </div>
-              
-            </li>
-          ))}
+          {flowers.map((flower) => {
+  console.log("Flower image URL:", flower.image); // 👈 just log, not return
+  return (
+    <li key={flower._id} 
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "35px",
+          marginTop: "18px",
+        }}
+    >
+      {flower.image && (
+        <img className="serene"
+          src={flower.image} 
+          alt={flower.name} 
+        />
+      )}
+      <div id="spat" style={{ flex: 1 }}>
+        <p className="spa"><span className="datum">Name:</span> {flower.name}</p>
+        <p className="spa"><span className="datum">Category:</span> {flower.category}</p>
+        <p className="spa"><span className="datum">Price:</span> ${flower.price}</p>
+        <p className="spa"><span className="datum">Description:</span> {flower.description}</p>
+      </div>
+    </li>
+  );
+})}
         </ul>
       )}
       <div className="end">
