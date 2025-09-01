@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use("/assets", express.static(path.join(__dirname, "assets"))); // Serve uploaded images
+app.use("/assets", express.static(path.join(process.cwd(), "assets")));// Serve uploaded images
 
 // Routes
 app.use("/api", flowerRoutes);
