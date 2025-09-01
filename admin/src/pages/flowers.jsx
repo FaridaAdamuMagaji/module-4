@@ -43,9 +43,10 @@ function Flowers() {
         }}
     >
       {flower.image && (
-        <img className="serene"
-          src={flower.image} 
-          alt={flower.name} 
+        <img
+          className="serene"
+          src={`https://flower-module.onrender.com${flower.image}`}
+        alt={flower.name}
         />
       )}
       <div id="spat" style={{ flex: 1 }}>
