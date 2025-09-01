@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Flowers() {
   const [flowers, setFlowers] = useState([]);
-  
+
   useEffect(() => {
     fetch("https://flower-module.onrender.com/api/flowers")
       .then(res => res.json())
@@ -44,7 +44,7 @@ function Flowers() {
             >
               {flower.image && (
                 <img className="serene"
-                  src={`https://flower-module.onrender.com/api/flowers${flower.image}`} 
+                  src={flower.image} 
                   alt={flower.name} 
                 />
               )}
