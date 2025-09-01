@@ -23,14 +23,11 @@ The Flower Delivery Website is an e-commerce platform that allows users to brows
 
 ## Live-demo 
 -Checkout the live Demo of the project: [Live Demo] 
+
+https://flowers-module.onrender.com
 -To GET all flowers (https://flower-module.onrender.com/api/flowers)
 
 -To GET all users (https://flower-module.onrender.com/users)
-
--Checkout the live Demo of the project: [Live Demo] 
--To GET all flowers (https://flowerrs.onrender.com/api/flowers)
-
--To GET all users (https://flowerrs.onrender.com/users)
 
 ## Technologies used
 Backend: Node.js, Express.js

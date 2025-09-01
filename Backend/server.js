@@ -30,7 +30,7 @@ mongoose.connect(mongo)
   .then(() => console.log('MongoDB connected successfully'))
   .catch(err => console.error('MongoDB connection error:', err));
 
-// Optional: Fetch all users (for admin/debug, not recommended in production)
+// Optional: Fetch all users 
 const User = require('./models/user');
 app.get('/users', async (req, res) => {
   console.log("GET /users hit");

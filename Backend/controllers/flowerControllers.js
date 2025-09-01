@@ -9,7 +9,8 @@ const createFlower = async (req, res) => {
             return res.status(400).json({ message: "Image file is required" });
         }
 
-        const image = `/assets/${req.file.filename}`;
+        const image = `${req.protocol}://${req.get("host")}/assets/${req.file.filename}`;
+
 
         if (!name || !description || !category || !price) {
             return res.status(400).json({ message: "All fields are required" });
@@ -54,7 +55,7 @@ const updateFlower = async (req, res) => {
         let updateData = { name, description, category, price };
 
         if (req.file) {
-            updateData.image = `/assets/${req.file.filename}`;
+            updateData.image = `${req.protocol}://${req.get("host")}/assets/${req.file.filename}`;
         }
 
         const updatedFlower = await Flower.findByIdAndUpdate(req.params.id, updateData, { new: true });
