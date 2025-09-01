@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function Flowers() {
   const [flowers, setFlowers] = useState([]);
-
+  
   useEffect(() => {
-    fetch("https://flowerrs.onrender.com/api/flowers")
+    fetch("https://flower-module.onrender.com/api/flowers")
       .then(res => res.json())
       .then(data => setFlowers(data))
       .catch(err => console.error(err));
@@ -44,7 +44,7 @@ function Flowers() {
             >
               {flower.image && (
                 <img className="serene"
-                  src={`https://flowerrs.onrender.com${flower.image}`} 
+                  src={`https://flower-module.onrender.com/api/flowers${flower.image}`} 
                   alt={flower.name} 
                 />
               )}
