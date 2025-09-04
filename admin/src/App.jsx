@@ -8,7 +8,6 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<Navigate to="/flowers" />} />
           <Route path="/flowers" element={<Flowers />} />
           <Route path="/add-flower" element={<AddFlower />} />
         </Routes>

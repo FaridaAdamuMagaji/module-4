@@ -52,6 +52,28 @@ function AddFlower() {
       showPopup("An error occurred.", "error");
     }
   };
+  const handleDelete = async () => {
+    const flowerId = prompt("Enter the flower ID to delete:");
+    if (!flowerId) return;
+
+    if (!window.confirm("Are you sure you want to delete this flower?")) return;
+
+    try {
+      const res = await fetch(`${API_URL}/${flowerId}`, {
+        method: "DELETE",
+      });
+
+      if (res.ok) {
+        showPopup("Flower deleted successfully!", "success");
+      } else {
+        const error = await res.json();
+        showPopup(error.message || "Failed to delete flower", "error");
+      }
+    } catch (err) {
+      showPopup("An error occurred.", "error");
+    }
+  };
+
 
   const showPopup = (message, type) => {
     setPopup({ show: true, message, type });
@@ -163,6 +185,10 @@ function AddFlower() {
             onChange={handleChange}
           />
         </label>
+        <button className="delete"
+          type="button"
+          onClick={handleDelete}
+          >DELETE</button>
         <button className="sub" type="submit">
           SUBMIT
         </button>

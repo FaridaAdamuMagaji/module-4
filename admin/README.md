@@ -19,7 +19,7 @@ The Flower Delivery website is a full-stack web application that allows users to
 
 ---
 ## Presentation <a name="Presentation"></a>
-- [Presentation Link] (https://www.loom.com/share/556679a1d7d84445825bc5de336a2bd6?sid=4b1e6c85-1cd4-478f-bae3-c71a027974a0)
+- [Presentation Link] (https://www.loom.com/share/c1f87a281f9e46f38730c61809d6ec01?sid=68b813b3-ce29-43bc-8c5a-a6a7568363ee)
 
 ## Live Demo
 - **Frontend (Admin):** [Deployed on Render](https://flower-admin-4l4p.onrender.com)    
