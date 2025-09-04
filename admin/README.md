@@ -24,6 +24,9 @@ The Flower Delivery website is a full-stack web application that allows users to
 ## Live Demo
 - **Frontend (Admin):** [Deployed on Render](https://flower-admin-4l4p.onrender.com)    
 
+To add/delete a flower- (https://flower-admin-4l4p.onrender.com/flowers)
+
+to view flowers -- (https://flower-admin-4l4p.onrender.com/add-flower)
 ---
 
 ## Features
