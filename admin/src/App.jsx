@@ -1,4 +1,4 @@
-import './App.css';
+/*import './App.css';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Flowers from "./pages/flowers";
 import AddFlower from "./pages/addFlower";
@@ -16,6 +16,28 @@ function App() {
   );
 }
 
+export default App;*/
+
+import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Flowers from "./pages/flowers";
+import AddFlower from "./pages/addFlower";
+
+function App() {
+  return (
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Navigate to="/flowers" />} />
+          <Route path="/flowers" element={<Flowers />} />
+          <Route path="/add-flower" element={<AddFlower />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
 export default App;
+
 
 
