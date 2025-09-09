@@ -189,7 +189,7 @@ function AddFlower() {
           type="button"
           onClick={handleDelete}
           >DELETE</button>
-        <button className="sub" type="submit">
+        <button className="sub" type="submit" onClick={handleSubmit}>
           SUBMIT
         </button>
       </form>
