@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+const API_URL = "https://flower-admin-4l4p.onrender.com";
 function AddFlower() {
   const [preview, setPreview] = useState(null);
   const [formData, setFormData] = useState({
@@ -41,13 +41,16 @@ function AddFlower() {
       });
 
       if (res.ok) {
-        showPopup("Flower added successfully!", "success");
-        setFormData({ name: "", category: "", price: "", description: "" });
-        setImage(null);
-        setPreview(null);
-      } else {
-        showPopup("Failed to add flower. Try again.", "error");
-      }
+  showPopup("Flower added successfully!", "success");
+  setFormData({ name: "", category: "", price: "", description: "" });
+  setImage(null);
+  setPreview(null);
+} else {
+  const error = await res.json().catch(() => null);
+  console.error("Error response:", error);
+  showPopup(error?.message || "Failed to add flower. Try again.", "error");
+}
+
     } catch (err) {
       showPopup("An error occurred.", "error");
     }
