@@ -34,7 +34,7 @@ function AddFlower() {
   if (image) data.append("image", image);
 
   try {
-    const res = await fetch("https://flower-admin-4l4p.onrender.com", {
+    const res = await fetch("https://flowerrs.onrender.com/api/flowers", {
       method: "POST",
       body: data,
     });
