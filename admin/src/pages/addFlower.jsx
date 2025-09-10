@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-const API_URL = "https://flower-admin-4l4p.onrender.com";
+
 function AddFlower() {
   const [preview, setPreview] = useState(null);
   const [formData, setFormData] = useState({
@@ -23,38 +23,38 @@ function AddFlower() {
       setPreview(URL.createObjectURL(file));
     }
   };
-
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const data = new FormData();
-    data.append("name", formData.name);
-    data.append("category", formData.category);
-    data.append("price", formData.price);
-    data.append("description", formData.description);
-    if (image) data.append("image", image);
+  const data = new FormData();
+  data.append("name", formData.name);
+  data.append("category", formData.category);
+  data.append("price", formData.price);
+  data.append("description", formData.description);
+  if (image) data.append("image", image);
 
-    try {
-      const res = await fetch("https://flowerrs.onrender.com/api/flowers", {
-        method: "POST",
-        body: data,
-      });
+  try {
+    const res = await fetch("https://flower-admin-4l4p.onrender.com", {
+      method: "POST",
+      body: data,
+    });
 
-      if (res.ok) {
-  showPopup("Flower added successfully!", "success");
-  setFormData({ name: "", category: "", price: "", description: "" });
-  setImage(null);
-  setPreview(null);
-} else {
-  const error = await res.json().catch(() => null);
-  console.error("Error response:", error);
-  showPopup(error?.message || "Failed to add flower. Try again.", "error");
-}
-
-    } catch (err) {
-      showPopup("An error occurred.", "error");
+    if (res.ok) {
+      showPopup("Flower added successfully!", "success");
+      setFormData({ name: "", category: "", price: "", description: "" });
+      setImage(null);
+      setPreview(null);
+    } else {
+      const errorText = await res.text(); // 👈 log raw response
+      console.error("Server error:", res.status, errorText);
+      showPopup(`Failed (${res.status}): ${errorText}`, "error");
     }
-  };
+  } catch (err) {
+    console.error("Fetch failed:", err); // 👈 log fetch/network error
+    showPopup("An error occurred. Check console for details.", "error");
+  }
+};
+  
   const handleDelete = async () => {
     const flowerId = prompt("Enter the flower ID to delete:");
     if (!flowerId) return;
@@ -62,7 +62,7 @@ function AddFlower() {
     if (!window.confirm("Are you sure you want to delete this flower?")) return;
 
     try {
-      const res = await fetch(`${API_URL}/${flowerId}`, {
+      const res = await fetch(`$https://flower-admin-4l4p.onrender.com/${flowerId}`, {
         method: "DELETE",
       });
 
@@ -192,7 +192,7 @@ function AddFlower() {
           type="button"
           onClick={handleDelete}
           >DELETE</button>
-        <button className="sub" type="submit" onClick={handleSubmit}>
+        <button className="sub" type="submit">
           SUBMIT
         </button>
       </form>
