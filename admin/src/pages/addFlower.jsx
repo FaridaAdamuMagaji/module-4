@@ -27,6 +27,7 @@ function AddFlower() {
       return () => URL.revokeObjectURL(objectUrl);
     }
   };
+  console.log("Submitting...", formData, image);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

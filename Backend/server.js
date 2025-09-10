@@ -11,11 +11,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
+/*app.use(cors());*/
 app.use(cors({
-  origin: ["http://localhost:5173", "https://flower-admin-4l4p.onrender.com"], 
-  methods: ["GET", "POST", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
+  origin: ["http://localhost:5173", "https://flower-admin-4l4p.onrender.com"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
 app.use(express.json());
 /*app.use("/assets", express.static(path.join(process.cwd(), "assets")));// Serve uploaded images*/
