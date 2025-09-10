@@ -5,7 +5,7 @@ function Flowers() {
   const [flowers, setFlowers] = useState([]);
 
   useEffect(() => {
-    fetch("https://flower-module.onrender.com/api/flowers")
+    fetch("https://admin-flowers.onrender.com/api/flowers")
       .then(res => res.json())
       .then(data => setFlowers(data))
       .catch(err => console.error(err));
@@ -45,7 +45,7 @@ function Flowers() {
       {flower.image && (
         <img
           className="serene"
-          src={`https://flower-module.onrender.com${flower.image}`}
+          src={`https://admin-flowers.onrender.com${flower.image}`}
         alt={flower.name}
         />
       )}

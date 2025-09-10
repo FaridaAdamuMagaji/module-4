@@ -40,7 +40,7 @@ function AddFlower() {
     if (image) data.append("image", image);
 
     try {
-      const res = await fetch("https://flower-module.onrender.com/api/flowers", {
+      const res = await fetch("https://admin-flowers.onrender.com/api/flowers", {
         method: "POST",
         body: data,
       });
@@ -68,7 +68,7 @@ function AddFlower() {
     if (!window.confirm("Are you sure you want to delete this flower?")) return;
 
     try {
-      const res = await fetch(`https://flower-module.onrender.com/api/flowers/${flowerId}`, {
+      const res = await fetch(`https://admin-flowers.onrender.com/api/flowers/${flowerId}`, {
         method: "DELETE",
       });
 
