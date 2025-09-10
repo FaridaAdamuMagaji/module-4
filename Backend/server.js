@@ -12,11 +12,17 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 /*app.use(cors());*/
+
+// ✅ This is the only CORS config you need
 app.use(cors({
-  origin: ["http://localhost:5173", "https://flower-admin-4l4p.onrender.com"],
+  origin: [
+    "http://localhost:5173",          // for local dev
+    "https://flower-admin-4l4p.onrender.com"  // your deployed admin
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
+
 app.use(express.json());
 /*app.use("/assets", express.static(path.join(process.cwd(), "assets")));// Serve uploaded images*/
 
