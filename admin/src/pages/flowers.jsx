@@ -10,7 +10,7 @@ function Flowers() {
       .then(data => setFlowers(data))
       .catch(err => console.error(err));
   }, []);
-  const BASE_URL = ""https://flower-module.onrender.com"
+  const BASE_URL = "https://flower-module.onrender.com"
 
   return (
     <div>
