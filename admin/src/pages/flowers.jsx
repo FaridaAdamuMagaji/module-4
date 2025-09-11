@@ -10,6 +10,7 @@ function Flowers() {
       .then(data => setFlowers(data))
       .catch(err => console.error(err));
   }, []);
+  const BASE_URL = ""https://flower-module.onrender.com"
 
   return (
     <div>
@@ -43,8 +44,11 @@ function Flowers() {
         }}
     >
       {flower.image && (
-        <img className="serene" src={flower.image} alt={flower.name} />
-
+        <img className="serene"
+          src={`${BASE_URL}${flower.image}`} 
+          alt={flower.name} 
+        />
+        
       )}
       <div id="spat" style={{ flex: 1 }}>
         <p className="spa"><span className="datum">Name:</span> {flower.name}</p>
