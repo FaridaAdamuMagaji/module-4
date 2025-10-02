@@ -1,0 +1,63 @@
+/* Reset default browser spacing */
+* {
+  
+}
+
+html, body, #root {
+  height: auto;
+}
+body{
+  border: 1px solid black;
+}
+
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between; 
+  border-bottom: 1px solid black;
+}
+#menu{
+  border-right: 1px solid black;
+  padding: 10px;
+}
+
+#shop{
+  border-left: 1px solid black;
+  padding: 10px;
+}
+.kyiv{
+  padding: 15px;
+}
+h1{
+  color: black;
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 40px;
+}
+.discover{
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Gilroy";
+  border: 16px;
+  padding: 16px;
+  
+}
+#flows{
+  display: flex;
+  justify-content: space-between;
+}
+#experience{
+  font-size: 14px;
+}
+#flow{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#lux{
+  height: 500px; 
+  width: 405px;
+}
+
