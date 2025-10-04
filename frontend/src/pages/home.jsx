@@ -8,6 +8,17 @@ import aroma from "../assets/aroma-candels.png";
 import live from "../assets/live-plant.png";
 import freshner from "../assets/freshner.png";
 import luxe from "../assets/luxe-shop.png";
+import insta from "../assets/insta.png";
+import face from "../assets/facebook.png";
+import pint from "../assets/pinterest.png";
+import tweet from "../assets/twitter.png";
+import tele from "../assets/telegram.png";
+import call from "../assets/call.png";
+import pin from "../assets/location.png";
+import serve from "../assets/service.png";
+import google from "../assets/google-logo.png";
+import Footer from "../components/footer";
+import "../App.css";
 
 function Home() {
   return (
@@ -111,8 +122,76 @@ function Home() {
       </div>
       <div>
         <p>Follow us</p>
-        <div></div>
+        <div className="social">
+          <img src={insta} alt={insta}></img>
+          <img src={pint} alt="pintyerest"></img>
+          <img src={face} alt="facebook"></img>
+          <img src={tweet} alt="twitter"></img>
+          <img src={tele} alt="telegram"></img>
+        </div>
       </div>
+      <hr></hr>
+      <div>
+        <p>To Contact Us</p>
+        <p>We will call you back</p>
+        <input></input>
+        <button>BOOK A CALL</button>
+      </div>
+      <hr></hr>
+      <div>
+        <p>Phone</p>
+      <hr></hr>
+      </div>
+      <div>
+        <img src={call} alt="call"></img>
+        <p>+380980099777</p>
+      </div>
+        <img src={call} alt="call"></img>
+        <p>+380980099111</p>
+      <div>
+        <div>
+          Address
+        </div>
+        <hr></hr>
+        <div>
+          <p>OPENING HOURS 8 TO 11 P.M.</p>
+          <img src={pin} alt="pin"></img>
+          <p>15/4 Khreshchatyk Street, Kyiv </p>
+          <hr></hr>
+        </div>
+        <div>
+          <p>Our servics</p>
+          <img src={serve} alt="serve"></img>
+        </div>
+        <div>
+          <p>SERVICE</p>
+          <p>Flower Subscriptions</p>
+          <p>Experience the convenience and savings of regular flower deliveries with our flexible subscription service - up to 30% more profitable than one-time purchases.</p>
+          <button>SUBSCRIBE NOW</button>
+        </div>
+      </div>
+      <div id="decorate">
+        <p>SERVICE</p>
+        <p>Wedding and event decor</p>
+        <p>Let our team of expert florists and designers create stunning, on-trend floral décor for your special day. Trust us to bring your vision to life.</p>
+        <button>INQUIRE NOW</button>
+      </div>
+      <div>
+        <img src={google} alt="google"></img>
+        <p>REVIEWS</p>
+        <p>Our Clients say</p>
+        <p>“Ordered flowers online and they were the best bouquet! Impressed everyone around. Highly recommend this flower shop!”<span>Ronald Richards</span></p>
+        <button>READ REVIEWS</button>
+        <hr></hr>
+      </div>
+      <div>
+        <p>Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas...  Reminds you 7 days before. No spam or sharing your address</p>
+        <input></input>
+        <button>REMIND</button>
+      </div>
+      <Footer />
+      
+
       
       
 

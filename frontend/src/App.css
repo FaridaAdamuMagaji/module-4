@@ -1,7 +1,5 @@
-/* Reset default browser spacing */
-* {
-  
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+
 
 html, body, #root {
   height: auto;
@@ -48,7 +46,9 @@ h1{
   justify-content: space-between;
 }
 #experience{
-  font-size: 14px;
+  font-size: 11px;
+  font-family: 'monsterrat', sans-serif;
+  font-weight: 300;
 }
 #flow{
   display: flex;
@@ -61,3 +61,13 @@ h1{
   width: 405px;
 }
 
+.social{
+  background-color: blue;
+}
+#decorate{
+  background-image: url("./assets/decor.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 420px;
+  width: 375px;
+}
