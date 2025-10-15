@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 
+/*
 html, body, #root {
-  height: auto;
-}
+  
+}*/
 body{
   border: 1px solid black;
 }
-
+nav{
+  
+}
 
 .top{
   display: flex;
@@ -16,49 +19,123 @@ body{
   border-bottom: 1px solid black;
 }
 #menu{
+  padding: 4px;
   border-right: 1px solid black;
-  padding: 10px;
+  
 }
 
 #shop{
+  padding: 4px;
   border-left: 1px solid black;
-  padding: 10px;
+  
+  
+}
+.home{
+  
 }
 .kyiv{
-  padding: 15px;
+  padding: 20px 8px 10px 8px;
+}
+.luxe{
+  
+
 }
 h1{
   color: black;
-  font-family: "Gilroy";
-  font-weight: 400;
-  font-size: 40px;
+  font-family: 'monsterrat', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
 }
 .discover{
-  font-weight: 400;
   font-size: 14px;
-  font-family: "Gilroy";
-  border: 16px;
-  padding: 16px;
-  
+  font-family: 'monsterrat', sans-serif;  
 }
-#flows{
+
+#flowy{
   display: flex;
-  justify-content: space-between;
+  padding: 8px;
+}
+#vase{
+  height: 190px;
+  width: 160px;
+  border-right: 1px solid black;
+  padding-right: 10px;
 }
 #experience{
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'monsterrat', sans-serif;
-  font-weight: 300;
+  padding-top: 100px;
+  padding-left: 7px;
 }
 #flow{
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+.left{
+  padding-left: 4px;
+}
+.box{
+  font-family: 'monsterrat', sans-serif;
+  font-size: 20px;
+  padding-top: 60px;
+
+}
+.now{
+  text-decoration: none;
+  color: black;
+  font-family: 'monsterrat', sans-serif;
+  font-size: 14px;
+}
+.fresh{
+  height: 190px;
+  width: 196px;
+  border-left: 1px solid black;
+}
+#flows{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+#dried{
+  height: 180px;
+  width: 178px;
+  border-right: 1px solid black;
+}
+.boxes{
+  font-family: 'monsterrat', sans-serif;
+  font-size: 20px;
+  padding-top: 40px;
+}
+.nows{
+  text-decoration: none;
+  color: black;
+  font-family: 'monsterrat', sans-serif;
+  font-size: 14px;
+}
+.right{
+  padding-right: 50px;
+}
+h2{
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+.story{
+  font-size: 10px;
+  font-family: 'monsterrat', sans-serif;
+  padding-top: 20px;
+}
+.ours{
+  font-size: 20px;
+  font-family: 'monsterrat', sans-serif;
+  font-weight: 600;
 }
 
-
-#lux{
-  height: 500px; 
-  width: 405px;
+#serve{
+  height: 100px;
+  width: 100px;
 }
 
 .social{
@@ -68,6 +145,59 @@ h1{
   background-image: url("./assets/decor.jpg");
   background-size: cover;
   background-position: center;
-  height: 420px;
-  width: 375px;
+  height: 320px;
+  width: 372px;
+}
+.stories{
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+.we{
+  font-family: 'monsterrat', sans-serif;
+  font-size: 16px;
+}
+.lern{
+  border: 1px solid black;
+  width: 300px;
+  align-items: center;
+  justify-items: center;
+  margin: 15px 10px 10px 25px;
+  border-radius: 1px;
+}
+.why{
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-family: 'monsterrat', sans-serif;
+  font-weight: bolder;
+  padding-left: 10px;
+}
+.style{
+  font-family: 'monsterrat', sans-serif;
+  font-size: 20px;
+  color: black;
+  margin: 5px;
+}
+.at{
+  font-family: 'monsterrat', sans-serif;
+  font-size: 16px;
+  margin: 5px;
+}
+#lux{
+  margin: auto;
+  height: 300px; 
+  width: 372px;
+}
+.with{
+  font-family: 'monsterrat', sans-serif;
+  font-size: 12px;
+}
+.convenience{
+  font-family: 'monsterrat', sans-serif;
+  font-size: 12px;
+}
+.let{
+  font-family: 'monsterrat', sans-serif;
+  font-size: 12px;
 }
