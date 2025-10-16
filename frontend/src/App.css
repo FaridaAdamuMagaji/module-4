@@ -44,7 +44,7 @@ h1{
   color: black;
   font-family: 'monsterrat', sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 40px;
 }
 .discover{
   font-size: 14px;
@@ -70,8 +70,8 @@ h1{
 #flow{
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
 }
 .left{
   padding-left: 4px;
@@ -87,6 +87,7 @@ h1{
   color: black;
   font-family: 'monsterrat', sans-serif;
   font-size: 14px;
+  padding-left: 20px;
 }
 .fresh{
   height: 190px;
@@ -96,7 +97,7 @@ h1{
 #flows{
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 #dried{
   height: 180px;
@@ -121,32 +122,19 @@ h2{
   color: black;
   border-bottom: 1px solid black;
   padding-bottom: 20px;
+  padding-left: 5px;
+  font-size: 34px;
 }
 .story{
   font-size: 10px;
   font-family: 'monsterrat', sans-serif;
   padding-top: 20px;
+  padding-left: 5px;
 }
 .ours{
   font-size: 20px;
   font-family: 'monsterrat', sans-serif;
   font-weight: 600;
-}
-
-#serve{
-  height: 100px;
-  width: 100px;
-}
-
-.social{
-  background-color: blue;
-}
-#decorate{
-  background-image: url("./assets/decor.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 320px;
-  width: 372px;
 }
 .stories{
   border-bottom: 1px solid black;
@@ -168,14 +156,14 @@ h2{
   color: black;
   border-bottom: 1px solid black;
   padding-bottom: 20px;
-  font-size: 22px;
+  font-size: 34px;
   font-family: 'monsterrat', sans-serif;
   font-weight: bolder;
   padding-left: 10px;
 }
 .style{
   font-family: 'monsterrat', sans-serif;
-  font-size: 20px;
+  font-size: 26px;
   color: black;
   margin: 5px;
 }
@@ -183,6 +171,188 @@ h2{
   font-family: 'monsterrat', sans-serif;
   font-size: 16px;
   margin: 5px;
+}
+
+#serve{
+  height: 100px;
+  width: 100px;
+}
+.follow{
+  font-family: 'monsterrat', sans-serif;
+  font-weight: 400;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.social{
+  display: flex;
+  gap: 30px;
+  padding-left: 10px;
+}
+.contact{
+  padding-left: 10px;
+}
+.to{
+  font-size: 18px;
+  font-weight: bolder;
+  color: black;
+  font-family: 'monsterrat', sans-serif;
+
+}
+.call{
+  font-weight: 500;
+  color: black;
+}
+input{
+  font-size: 16px;
+  padding: 5px 95px 10px 10px;
+
+}
+.input{
+  /*padding: 10px 90px 10px 80px;*/
+  color: grey;
+  font-size: 16px;
+  
+}
+.book{
+  border: 1px solid black;
+  border-radius: 0;
+  color: white;
+  background-color: black;
+  width: 300px;
+  margin: 10px 2px 10px 1px;
+  /*padding: 5px 194px 10px 10px;*/
+}
+.phone{
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+  color: black;
+}
+.number{
+  display: flex;
+  padding-left: 10px;
+  align-content: center;
+
+}
+.boot{
+  height: 25px;
+  padding-top: 12px;
+}
+.opens{
+  padding-left: 10px;
+}
+.open{
+  font-size: 12px;
+  font-weight: 500px;
+  color: black;
+}
+.location{
+  display: flex;
+}
+#pin{
+  height: 28px;
+  padding-top: 15px;
+}
+.five{
+  font-weight: 600;
+  color: black;
+}
+.service{
+  text-align: center;
+}
+.serv{
+  font-size: 12px;
+}
+.subs{
+  font-size: 34px;
+  color: black;
+  font-weight: 600;
+}
+.convenience{
+  font-family: 'monsterrat', sans-serif;
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  padding: 25px;
+  margin-top: -25px;
+}
+.subscribe{
+  border: 1px solid black;
+  border-radius: 0;
+  width: 320px;
+}
+#decorate{
+  background-image: url("./assets/decor.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 398px;
+  width: 372px;
+  text-align: center;
+}
+.vice{
+  padding-top: 30px;
+  color: white;
+  font-size: 14px;
+}
+.vices{
+  padding-top: 30px;
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+}
+.wed{
+  color: white;
+  font-size: 34px;
+  font-family: 'monsterrat', sans-serif;
+}
+.inquire{
+  color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 30px;
+}
+.check{
+  text-align: center;
+}
+.review{
+  font-size: 14px;
+}
+.client{
+  font-size: 34px;
+  color: black;
+}
+.order{
+  font-size: 22px;
+  color: #000000;
+  padding: 12px;
+}
+#rich{
+  display: block;
+}
+.read{
+  border: 1px solid black;
+  border-radius: 0;
+  width: 300px;
+  margin-bottom: 30px;
+}
+.remember{
+  padding: 10px 10px 10px 10px;
+}
+.inputs{
+  padding: 5px 95px 10px 10px;
+  color: grey;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.books{
+  border: 1px solid black;
+  border-radius: 0;
+  color: white;
+  background-color: black;
+  width: 304px;
+  margin: 10px 2px 10px 10px;
 }
 #lux{
   margin: auto;
@@ -193,11 +363,122 @@ h2{
   font-family: 'monsterrat', sans-serif;
   font-size: 12px;
 }
-.convenience{
-  font-family: 'monsterrat', sans-serif;
-  font-size: 12px;
+.end{
+  margin-left: 15px;
 }
-.let{
-  font-family: 'monsterrat', sans-serif;
-  font-size: 12px;
+.us{
+  color: grey;
+  font-size: 18px;
+}
+.add{
+  font-size: 14px;
+  color: grey;
+}
+.street{
+  display: block;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.shops{
+  margin-left: 10px;
+  font-size: 18px;
+  color: grey;
+}
+.all{
+  list-style: none;
+  font-size: 14px;
+  color: black;
+  padding-left: 10px;
+}
+.shop{
+  font-size: 18px;
+  color: grey;
+}
+.shoop{
+  font-size: 18px;
+  color: grey;
+  padding-left: 10px;
+}
+
+/* Tablet view */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .kyiv{
+    padding: 50px;
+    
+  }
+  h1{
+    font-size: 64px;
+  }
+  .discover{
+    font-size: 18px;
+  }
+  #vase{
+    height: 256px;
+    width: 300px;
+    margin-top: -30px;
+  }
+  #experience{
+    font-size: 14px;
+    margin-top: 60px;
+    border: 1px solid black;
+    font-family: 'monsterrat', sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #flowy{
+    padding: 0px 50px 30px 50px;
+  }
+  .left{
+    padding: 70px 30px 10px 30px;
+  }
+  .box{
+    font-size: 38px;
+  }
+  .now{
+    font-size: 16px;
+  }
+  .fresh{
+    height: 384px;
+    width: 384px;
+  }
+  #dried{
+    height: 384px;
+    width: 384px;
+  }
+  .boxes{
+    font-size: 38px;
+  }
+  .nows{
+    font-size: 16px;
+  }
+  h2{
+    font-size: 50px;
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+  .story{
+    font-size: 14px;
+  }
+  .style{
+    font-size: 38px;
+  }
+  .at{
+    font-size: 16px;
+  }
+  .stories{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .lern{
+    font-size: 16px;
+    width: 180px;
+    margin-left: 10px;
+  }
+  .why{
+    font-size: 50px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+  }
+
+
 }

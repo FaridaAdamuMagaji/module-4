@@ -47,8 +47,9 @@ function Home() {
         <img id="dried" src={dried} alt="dried"></img>
         <div className="right">
           <p className="boxes">Dried Flowers</p>
-          <a className="nows">Shop now</a>
           <img src={left} alt="arrow"></img>
+          <a className="nows">Shop now</a>
+          
         </div>
       </div>
       <div id="flows">
@@ -63,8 +64,9 @@ function Home() {
         <img id="dried" src={aroma} alt="candel"></img>
         <div className="right">
           <p className="boxes">Aroma Candels</p>
-          <a className="now">Shop now</a>
           <img src={left} alt="arrow"></img>
+          <a className="nows">Shop now</a>
+          
         </div>
       </div>
       <div id="flows">
@@ -73,13 +75,13 @@ function Home() {
           <a className="now">Shop now</a>
           <img src={arrow} alt="arrow"></img>
         </div>
-        <img id="fresh" src={freshner} alt="freshner"></img>
+        <img className="fresh" src={freshner} alt="freshner"></img>
       </div>
       <h2>About us</h2>
       <div className="stories">
         <p className="story">OUR STORY</p>
-        <p className="ours">Kyiv LuxeBouquets</p>
-        <p className="we">
+        <p className="style">Kyiv LuxeBouquets</p>
+        <p className="at">
           We are a modern local floral studio, which specializes in the design and delivery of unique bouquets. We have the best florists who carefully select each look, our studio cooperates directly with farms for growing different flowers, so we always have fresh flowers, which are collected by our florists in exquisite bouquets. We have a collection of fresh bouquets, collections of dried bouquets, house plants, as well as fragrant candles from luxury brands to create the perfect atmosphere. Make someone's day amazing by sending flowers, plants and gifts the same or next day. Ordering flowers online has never been easier.
         </p>
         <button className="lern">LERN MORE</button>
@@ -105,7 +107,7 @@ function Home() {
         <img id="lux" src={luxe} alt="shop"></img>
       </div>
       <div>
-        <p>Follow us</p>
+        <p className="follow">Follow us</p>
         <div className="social">
           <img src={insta} alt={insta}></img>
           <img src={pint} alt="pintyerest"></img>
@@ -115,63 +117,69 @@ function Home() {
         </div>
       </div>
       <hr></hr>
-      <div>
-        <p>To Contact Us</p>
-        <p>We will call you back</p>
-        <input></input>
-        <button>BOOK A CALL</button>
+      <div className="contact">
+        <p className="to">To Contact Us</p>
+        <p className="call">We will call you back</p>
+        <input className="input" type="text" value="+380 xx xxx xx xx"></input>
+        <div><button className="book">BOOK A CALL</button></div>
+        
       </div>
       <hr></hr>
       <div>
-        <p>Phone</p>
+        <p className="phone">Phone</p>
       <hr></hr>
       </div>
-      <div>
-        <img src={call} alt="call"></img>
+      <div className="number">
+        <img className="boot" src={call} alt="call"></img>
         <p>+380980099777</p>
       </div>
-        <img src={call} alt="call"></img>
+      <div className="number">
+        <img className="boot" src={call} alt="call"></img>
         <p>+380980099111</p>
+      </div>
+      <hr></hr>
       <div>
-        <div>
+        <div className="phone">
           Address
         </div>
         <hr></hr>
-        <div>
-          <p>OPENING HOURS 8 TO 11 P.M.</p>
-          <img src={pin} alt="pin"></img>
-          <p>15/4 Khreshchatyk Street, Kyiv </p>
-          <hr></hr>
+        <div className="opens">
+          <p className="open">OPENING HOURS 8 TO 11 P.M.</p>
+          <div className="location">
+            <img id="pin" src={pin} alt="pin"></img>
+            <p className="five">15/4 Khreshchatyk Street, Kyiv </p>
+          </div>
         </div>
+        <hr></hr>
         <div>
-          <p>Our services</p>
+          <p className="phone">Our service</p>
           <img id="lux" src={serve} alt="serve"></img>
         </div>
-        <div>
-          <p>SERVICE</p>
-          <p>Flower Subscriptions</p>
+        <div className="service">
+          <p className="serv">SERVICE</p>
+          <p className="subs">Flower Subscriptions</p>
           <p className="convenience">Experience the convenience and savings of regular flower deliveries with our flexible subscription service - up to 30% more profitable than one-time purchases.</p>
-          <button>SUBSCRIBE NOW</button>
+          <button className="subscribe">SUBSCRIBE NOW</button>
         </div>
       </div>
       <div id="decorate">
-        <p>SERVICE</p>
-        <p>Wedding and event decor</p>
-        <p className="let">Let our team of expert florists and designers create stunning, on-trend floral décor for your special day. Trust us to bring your vision to life.</p>
-        <button>INQUIRE NOW</button>
+        <p className="vice">SERVICE</p>
+        <p className="wed">Wedding & event decor</p>
+        <p className="vices">Let our team of expert florists and designers create stunning, on-trend floral décor for your special day. Trust us to bring your vision to life.</p>
+        <p className="inquire">INQUIRE NOW</p>
       </div>
-      <div>
+      <div className="check">
         <img src={google} alt="google"></img>
-        <p>REVIEWS</p>
-        <p>Our Clients say</p>
-        <p>“Ordered flowers online and they were the best bouquet! Impressed everyone around. Highly recommend this flower shop!”<span>Ronald Richards</span></p>
-        <button>READ REVIEWS</button>
+        <p className="review">REVIEWS</p>
+        <p className="client">Our Clients say</p>
+        <p className="order">“Ordered flowers online and they were the best bouquet! Impressed everyone around. Highly recommend this flower shop!”<span id="rich">~Ronald Richards</span></p>
+        <button className="read">READ REVIEWS</button>
         <hr></hr>
       </div>
       <div>
-        <p>Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas... Reminds you 7 days before. No spam or sharing your address</p>
-        <input></input>
-        <button>REMIND</button>
+        <p className="remember">Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas... <span id="rich">Reminds you 7 days before. No spam or sharing your address</span></p>
+        <input className="inputs" type="text" value="Your Email"></input>
+        <button className="books">REMIND</button>
       </div>
       <Footer />
       

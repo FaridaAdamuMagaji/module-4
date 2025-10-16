@@ -9,19 +9,23 @@ import tele from "../assets/telegram.png";
 const Footer = () => {
     return (
         <div>
-            <p>Contact Us</p>
-            <p>Address <br></br> 15/4 Khreshchatyk Street, Kyiv <br></br><span>Phone</span> <br></br><span>+380980099777<br></br>General inquiry<br></br> Kiev.Florist.Studio@gmail.com</span></p>
-            <p>Foolow Us</p>
-            <div>
+            <div className="end">
+                <p className="us">Contact Us</p>
+                <p className="add">Address<span className="street">15/4 Khreshchatyk Street, Kyiv </span> <br></br><span className="add">Phone</span> <br></br><span className="street">+380980099777</span><br></br><span className="add">General inquiry</span><br></br> <span className="street">Kiev.Florist.Studio@gmail.com</span></p>
+                <p className="us">Follow Us</p>
+            </div>
+            
+            <div className="social">
                 <img src={insta} alt="insta"></img>
                 <img src={pint} alt="pinterest"></img>
                 <img src={face} alt="facebook"></img>
                 <img src={tweet} alt="twitter"></img>
                 <img src={tele} alt="telegram"></img>
             </div>
+            <hr></hr>
             <div>
-                <p>Shop</p>
-                <ul>
+                <p className="shops">Shop</p>
+                <ul className="all">
                     <li>All Products</li>
                     <li>Fresh Flowers</li>
                     <li>Dried Flowers</li>
@@ -29,18 +33,21 @@ const Footer = () => {
                     <li>Designer Vases</li>
                     <li>Aroma Candles</li>
                     <li>Freshner Diffuser</li>
-                    <li>Service</li>
+                    <p className="shop">Service</p>
                     <li>Flower Subscription</li>
                     <li>Wedding and event decor</li>
-                    <hr></hr>
-                    <li>About Us</li>
+                </ul>
+                <p className="shoop">About Us</p>
+                <ul className="all">
                     <li>Our story</li>
                     <li>Blog</li>
                     <br></br>
                     <li>Shippping & Return</li>
                     <li>Terms & Conditions</li>
                     <li>Privacy Policy</li>
+                    <br></br>
                 </ul>
+                
             </div>
         </div>
         );
