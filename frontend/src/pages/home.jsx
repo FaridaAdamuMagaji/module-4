@@ -18,11 +18,11 @@ import pin from "../assets/location.png";
 import serve from "../assets/service.png";
 import google from "../assets/google-logo.png";
 import Footer from "../components/footer";
-import insta from "../assets/insta.png";
+/*import insta from "../assets/insta.png";
 import pint from "../assets/pinterest.png";
 import face from "../assets/facebook.png";
 import tweet from "../assets/twitter.png";
-import tele from "../assets/telegram.png";
+import tele from "../assets/telegram.png";*/
 import "../App.css";
 
 function Home() {
@@ -204,7 +204,7 @@ function Home() {
           <p className="add">Address<span className="street">15/4 Khreshchatyk Street, Kyiv </span> <br></br><span className="add">Phone</span> <br></br><span className="street">+380980099777</span><br></br><span className="add">General inquiry</span><br></br> <span className="street">Kiev.Florist.Studio@gmail.com</span></p>
           <p className="us">Follow Us</p>
         </div>
-        <div className="social">
+        <div className="socials">
         <img src={insta} alt="insta"></img>
         <img src={pint} alt="pinterest"></img>
         <img src={face} alt="facebook"></img>
