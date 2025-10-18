@@ -228,6 +228,12 @@ input{
   padding-left: 10px;
   color: black;
 }
+.phones{
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+  color: black;
+}
 .number{
   display: flex;
   padding-left: 10px;
@@ -327,6 +333,7 @@ input{
   font-size: 22px;
   color: #000000;
   padding: 12px;
+  font-style: italic;
 }
 #rich{
   display: block;
@@ -468,6 +475,7 @@ input{
   .stories{
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 40px;
   }
   .lern{
     font-size: 16px;
@@ -478,6 +486,211 @@ input{
     font-size: 50px;
     padding-left: 50px;
     padding-bottom: 40px;
+  }
+  #lux{
+    height: 650px;
+    width: 764px;
+  }
+  .follows{
+    /*display: flex;
+    gap: 40px;
+    border: 1px solid black;*/
+    display: flex;
+
+  }
+  .hr{
+    display: none;
+  }
+  .follow{
+    font-size: 38px;
+    border: 1px solid black;
+    width: 290px;
+    padding-left: 20px;
+    border-left-color: white;
+    border-top-color: white;
+    
+  
+  }
+  .social{
+    border: 1px solid black;
+    width:417px;
+    height: 50px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    border-top-color: white;
+    border-right-color: white;
+  }
+  #instag{
+    height: 40px;
+  }
+  .to{
+    font-size: 50px;
+  }
+  .call{
+    font-size: 18px;
+  }
+  .flex{
+    display: flex;
+    gap: 30px;
+    
+  }
+  .contact{
+    padding: 30px 50px 80px 60px;
+  }
+  .book{
+    height: 60px;
+    
+  }
+  .container{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 300px;
+  }
+  .lefts,
+  .rights{
+    flex: 1;
+    
+    
+  }
+  .rights{
+    padding-top: 18px;
+  }
+  .divider{
+    width: 1px;
+    background-color: black;
+    
+    /*margin: 0 20px;*/
+  }
+  .phone{
+    border-bottom: 1px solid black;
+    
+  }
+  .phones{
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+  }
+  .serv{
+    font-size: 14px;
+    padding-top: 50px;
+  }
+  .subs{
+    font-size: 50px;
+    margin-top: -20px;
+  }
+  .convenience{
+    font-size: 18px;
+  }
+  .service{
+    text-align: center;
+  }
+  .subscribe{
+    width: 180px;
+    height: 56px;
+
+  }
+  #decorate{
+    width: 762px;
+    height: 750px;
+    justify-items: center;
+    align-items: center;
+  }
+  .vice{
+    font-size: 14px;
+    padding-top: 150px;
+    
+  }
+  .wed{
+    font-size: 50px;
+  }
+  .vices{
+    font-size: 18px;
+  }
+  .inquire{
+    height: 56px;
+    width: 170px;
+    align-content: center;
+  }
+  .google{
+    height: 28px;
+    width: 77px;
+  }
+  .review{
+    font-size: 14px;
+  }
+  .client{
+    font-size: 50px;
+  }
+  .order{
+    font-size: 28px;
+    font-style: italic;
+  }
+  #rich{
+    font-size: 16px;
+  }
+  .check{
+    text-align: center;
+    margin: 30px;
+  }
+  .read{
+    font-size: 16px;
+    height: 56px;
+    width: 163px;
+  }
+  .remember{
+    font-size: 16px;
+  }
+  .inputs{
+    height: 50px;
+    width: 150px;
+    border-left-color: black;
+  }
+  .books{
+    height: 60px;
+    width: 264px;
+    display: block;
+  }
+  .foot{
+    border: 1px solid black;
+    display: flex;
+  }
+  .one{
+    border-bottom: 1px;
+    padding: 10px 30px 20px 20px;
+  }
+  .divide{
+    width: 1px;
+    background-color: black;
+    margin-left: 22px;
+  }
+  .social{
+    height: 40px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+    padding-left: 10px;
+    padding-right: 0px;
+    
+  }
+  .two{
+    padding-top: 20px;
+  }
+  .ends{
+    border: 1px solid black;
+    display: flex;
+    
+  }
+  .and{
+    padding: 10px;
+  }
+  .div{
+    width: 1px;
+    background-color: black;
+    margin-left: 160px;
+  }
+  .ender{
+    padding: 10px;
   }
 
 

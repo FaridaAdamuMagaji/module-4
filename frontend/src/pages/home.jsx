@@ -18,6 +18,11 @@ import pin from "../assets/location.png";
 import serve from "../assets/service.png";
 import google from "../assets/google-logo.png";
 import Footer from "../components/footer";
+import insta from "../assets/insta.png";
+import pint from "../assets/pinterest.png";
+import face from "../assets/facebook.png";
+import tweet from "../assets/twitter.png";
+import tele from "../assets/telegram.png";
 import "../App.css";
 
 function Home() {
@@ -106,53 +111,63 @@ function Home() {
       <div>
         <img id="lux" src={luxe} alt="shop"></img>
       </div>
-      <div>
+      <div className="follows">
         <p className="follow">Follow us</p>
         <div className="social">
-          <img src={insta} alt={insta}></img>
-          <img src={pint} alt="pintyerest"></img>
-          <img src={face} alt="facebook"></img>
-          <img src={tweet} alt="twitter"></img>
-          <img src={tele} alt="telegram"></img>
+          <img id="instag" src={insta} alt={insta}></img>
+          <img id="instag" src={pint} alt="pintyerest"></img>
+          <img id="instag" src={face} alt="facebook"></img>
+          <img id="instag" src={tweet} alt="twitter"></img>
+          <img id="instag" src={tele} alt="telegram"></img>
         </div>
+        <hr className="hr"></hr>
       </div>
-      <hr></hr>
       <div className="contact">
         <p className="to">To Contact Us</p>
         <p className="call">We will call you back</p>
-        <input className="input" type="text" value="+380 xx xxx xx xx"></input>
-        <div><button className="book">BOOK A CALL</button></div>
-        
-      </div>
-      <hr></hr>
-      <div>
-        <p className="phone">Phone</p>
-      <hr></hr>
-      </div>
-      <div className="number">
-        <img className="boot" src={call} alt="call"></img>
-        <p>+380980099777</p>
-      </div>
-      <div className="number">
-        <img className="boot" src={call} alt="call"></img>
-        <p>+380980099111</p>
-      </div>
-      <hr></hr>
-      <div>
-        <div className="phone">
-          Address
+        <div className="flex">
+          <input className="input" type="text" value="+380 xx xxx xx xx"></input>
+          <div className="booked"><button className="book">BOOK A CALL</button></div>
         </div>
-        <hr></hr>
-        <div className="opens">
-          <p className="open">OPENING HOURS 8 TO 11 P.M.</p>
-          <div className="location">
-            <img id="pin" src={pin} alt="pin"></img>
-            <p className="five">15/4 Khreshchatyk Street, Kyiv </p>
+      </div>
+      <hr></hr>
+      <div className="container">
+        <div className="lefts">
+          <div>
+            <p className="phone">Phone</p>
+          <hr className="hr"></hr>
+          </div>
+          <div className="number">
+            <img className="boot" src={call} alt="call"></img>
+            <p>+380980099777</p>
+          </div>
+          <div className="number">
+          <img className="boot" src={call} alt="call"></img>
+          <p>+380980099111</p>
+          </div>
+          <hr className="hr"></hr>
+        </div>
+        <div className="divider"></div>
+        <div className="rights">
+          <div className="phone">
+            Address
+          </div>
+          <hr className="hr"></hr>
+          <div className="opens">
+            <p className="open">OPENING HOURS 8 TO 11 P.M.</p>
+            <div className="location">
+              <img id="pin" src={pin} alt="pin"></img>
+              <p className="five">15/4 Khreshchatyk Street, Kyiv </p>
+            </div>
           </div>
         </div>
+      </div>
+      
+      <div>
+        
         <hr></hr>
         <div>
-          <p className="phone">Our service</p>
+          <p className="phones">Our service</p>
           <img id="lux" src={serve} alt="serve"></img>
         </div>
         <div className="service">
@@ -169,18 +184,39 @@ function Home() {
         <p className="inquire">INQUIRE NOW</p>
       </div>
       <div className="check">
-        <img src={google} alt="google"></img>
+        <img className="google" src={google} alt="google"></img>
         <p className="review">REVIEWS</p>
         <p className="client">Our Clients say</p>
         <p className="order">“Ordered flowers online and they were the best bouquet! Impressed everyone around. Highly recommend this flower shop!”<span id="rich">~Ronald Richards</span></p>
         <button className="read">READ REVIEWS</button>
-        <hr></hr>
+        <hr className="hr"></hr>
       </div>
-      <div>
+      <div className="foot">
+        <div className="one">
         <p className="remember">Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas... <span id="rich">Reminds you 7 days before. No spam or sharing your address</span></p>
         <input className="inputs" type="text" value="Your Email"></input>
         <button className="books">REMIND</button>
       </div>
+      <div className="divide"></div>
+      <div className="two">
+        <div className="end">
+          <p className="us">Contact Us</p>
+          <p className="add">Address<span className="street">15/4 Khreshchatyk Street, Kyiv </span> <br></br><span className="add">Phone</span> <br></br><span className="street">+380980099777</span><br></br><span className="add">General inquiry</span><br></br> <span className="street">Kiev.Florist.Studio@gmail.com</span></p>
+          <p className="us">Follow Us</p>
+        </div>
+        <div className="social">
+        <img src={insta} alt="insta"></img>
+        <img src={pint} alt="pinterest"></img>
+        <img src={face} alt="facebook"></img>
+        <img src={tweet} alt="twitter"></img>
+        <img src={tele} alt="telegram"></img>
+      </div>
+      <hr className="hr"></hr>
+      </div>
+      </div>
+      
+                  
+      
       <Footer />
       
 
