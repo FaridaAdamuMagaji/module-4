@@ -18,18 +18,20 @@ import pin from "../assets/location.png";
 import serve from "../assets/service.png";
 import google from "../assets/google-logo.png";
 import Footer from "../components/footer";
-/*import insta from "../assets/insta.png";
-import pint from "../assets/pinterest.png";
-import face from "../assets/facebook.png";
-import tweet from "../assets/twitter.png";
-import tele from "../assets/telegram.png";*/
+
+import FreshFlowers from "../pages/freshFlowers";
+import { Link } from "react-router-dom";
+
+
 import "../App.css";
 
 function Home() {
   return (
     <div className="home">
       <Navbar />
-      <div className="kyiv"> 
+      <div className="laptops">
+        <div className="lap">
+          <div className="kyiv"> 
         <h1>Kyiv
           <br></br>
           <span className="luxe">LuxeBouquets</span> </h1>
@@ -40,10 +42,13 @@ function Home() {
         <img id="vase" src={vase} alt="vase"></img>
         <p id="experience">Experience the joy of giving with our modern floral studio. Order online and send fresh flowers, plants and gifts today.</p>
       </div>
-      <div id="flow">
+        </div>
+        <div className="laptop">
+          <div id="flow">
         <div className="left">
-          <p className="box">Fresh Flowers</p>
-          <a className="now">Shop now</a>
+          <p className="box">
+            Fresh Flowers</p>
+          <Link to="/freshFlowers" className="now">Shop now</Link>
           <img src={arrow} alt="arrow"></img>
         </div>
         <img className="fresh" src={fresh} alt="flower"></img>
@@ -53,7 +58,7 @@ function Home() {
         <div className="right">
           <p className="boxes">Dried Flowers</p>
           <img src={left} alt="arrow"></img>
-          <a className="nows">Shop now</a>
+          <Link to="/" className="nows">Shop now</Link>
           
         </div>
       </div>
@@ -82,7 +87,11 @@ function Home() {
         </div>
         <img className="fresh" src={freshner} alt="freshner"></img>
       </div>
-      <h2>About us</h2>
+        </div>
+      </div>
+      
+      <div id="second">
+        <h2>About us</h2>
       <div className="stories">
         <p className="story">OUR STORY</p>
         <p className="style">Kyiv LuxeBouquets</p>
@@ -91,27 +100,39 @@ function Home() {
         </p>
         <button className="lern">LERN MORE</button>
       </div>
-      <p className="why">Why choose us ?</p>
-      <div className="stories">
+      </div>
+      <div className="wise">
+        <div>
+          <p className="why">Why choose us ?</p>
+        </div>
+        <div className="whys">
+          <div className="stories">
         <p className="style">Stylish bouquets by florists</p>
         <p className="at">At our floral studio, our professional florists craft the most elegant and stylish bouquets using only the freshest and highest quality materials available. We stay up-to-date with the latest floral design trends and offer unique arrangements that are sure to impress. Let us brighten up your day with our stunning bouquets and same-day delivery service.</p>
-      </div>
-      <div className="stories">
+        </div>
+        <div className="stories">
         <p className="style">On-time delivery</p>
         <p className="at">Never miss a moment with our on-time flower delivery service. Our couriers will deliver your bouquet personally, without boxes, to ensure it arrives in perfect condition. Trust us to deliver your thoughtful gift reliably.</p>
-      </div>
-      <div className="stories">
+        </div>
+        <div className="stories">
         <p className="style">Safe payment</p>
         <p className="at">You can feel secure when placing an order with us, as we use industry-standard security measures to protect your payment information. Your transaction will be safe and hassle-free, so you can shop with confidence.</p>
-      </div>
-      <div className="stories">
+        </div>
+        <div className="stories">
         <p className="style">Subscription by your needs</p>
         <p className="at">With our subscription service tailored to your specific needs, you can enjoy the convenience of having beautiful bouquets delivered straight to your door at regular intervals. Our flexible service is perfect for busy individuals or those who want to ensure they always have fresh flowers on hand. You'll save time and money with this hassle-free solution to your floral needs.</p>
+        </div>
+        
       </div>
-      <div>
-        <img id="lux" src={luxe} alt="shop"></img>
+      
+      
+      
+        
       </div>
-      <div className="follows">
+      <div className="luxy">
+        <div className="luxes">
+          <img id="lux" src={luxe} alt="shop"></img>
+        <div className="follows">
         <p className="follow">Follow us</p>
         <div className="social">
           <img id="instag" src={insta} alt={insta}></img>
@@ -121,17 +142,20 @@ function Home() {
           <img id="instag" src={tele} alt="telegram"></img>
         </div>
         <hr className="hr"></hr>
-      </div>
-      <div className="contact">
+        </div>
+        </div>
+
+        <div className="contacts">
+          <div className="contact">
         <p className="to">To Contact Us</p>
         <p className="call">We will call you back</p>
         <div className="flex">
           <input className="input" type="text" value="+380 xx xxx xx xx"></input>
           <div className="booked"><button className="book">BOOK A CALL</button></div>
         </div>
-      </div>
-      <hr></hr>
-      <div className="container">
+        </div>
+        <hr></hr>
+        <div className="container">
         <div className="lefts">
           <div>
             <p className="phone">Phone</p>
@@ -162,12 +186,17 @@ function Home() {
           </div>
         </div>
       </div>
+
+        </div>
+      </div>
+
+
       
-      <div>
+      <hr></hr>
+        <p className="phones">Our service</p>      
+      <div className="serves">
         
-        <hr></hr>
         <div>
-          <p className="phones">Our service</p>
           <img id="lux" src={serve} alt="serve"></img>
         </div>
         <div className="service">
@@ -180,49 +209,22 @@ function Home() {
       <div id="decorate">
         <p className="vice">SERVICE</p>
         <p className="wed">Wedding & event decor</p>
-        <p className="vices">Let our team of expert florists and designers create stunning, on-trend floral décor for your special day. Trust us to bring your vision to life.</p>
+        <p className="vices">Let our team of expert florists and designers create stunning, on-trend <span id="floral">floral décor for your special day. Trust us to bring your vision to life.</span></p>
         <p className="inquire">INQUIRE NOW</p>
       </div>
       <div className="check">
         <img className="google" src={google} alt="google"></img>
+        
         <p className="review">REVIEWS</p>
         <p className="client">Our Clients say</p>
         <p className="order">“Ordered flowers online and they were the best bouquet! Impressed everyone around. Highly recommend this flower shop!”<span id="rich">~Ronald Richards</span></p>
+        
         <button className="read">READ REVIEWS</button>
         <hr className="hr"></hr>
       </div>
-      <div className="foot">
-        <div className="one">
-        <p className="remember">Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas... <span id="rich">Reminds you 7 days before. No spam or sharing your address</span></p>
-        <input className="inputs" type="text" value="Your Email"></input>
-        <button className="books">REMIND</button>
-      </div>
-      <div className="divide"></div>
-      <div className="two">
-        <div className="end">
-          <p className="us">Contact Us</p>
-          <p className="add">Address<span className="street">15/4 Khreshchatyk Street, Kyiv </span> <br></br><span className="add">Phone</span> <br></br><span className="street">+380980099777</span><br></br><span className="add">General inquiry</span><br></br> <span className="street">Kiev.Florist.Studio@gmail.com</span></p>
-          <p className="us">Follow Us</p>
-        </div>
-        <div className="socials">
-        <img src={insta} alt="insta"></img>
-        <img src={pint} alt="pinterest"></img>
-        <img src={face} alt="facebook"></img>
-        <img src={tweet} alt="twitter"></img>
-        <img src={tele} alt="telegram"></img>
-      </div>
-      <hr className="hr"></hr>
-      </div>
-      </div>
       
-                  
-      
+
       <Footer />
-      
-
-      
-      
-
       
       
     </div>

@@ -1,10 +1,38 @@
-
+import insta from "../assets/insta.png";
+import pint from "../assets/pinterest.png";
+import face from "../assets/facebook.png";
+import tweet from "../assets/twitter.png";
+import tele from "../assets/telegram.png";
 
 
 
 const Footer = () => {
     return (
-        <div className="ends">
+        <div className="part">
+            <div className="foot">
+                <div className="one">
+                    <p className="remember">Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas... <span id="rich">Reminds you 7 days before. No spam or sharing your address</span></p>
+                    <input className="inputs" type="text" value="Your Email"></input>
+                    <button className="books">REMIND</button>
+                </div>
+                <div className="divide"></div>
+                <div className="two">
+                    <div className="end">
+                        <p className="us">Contact Us</p>
+                        <p className="add">Address<span className="street">15/4 Khreshchatyk Street, Kyiv </span> <br></br><span className="add">Phone</span> <br></br><span className="street">+380980099777</span><br></br><span className="add">General inquiry</span><br></br> <span className="street">Kiev.Florist.Studio@gmail.com</span></p>
+                        <p className="us">Follow Us</p>
+                    </div>
+                    <div className="socials">
+                        <img src={insta} alt="insta"></img>
+                        <img src={pint} alt="pinterest"></img>
+                        <img src={face} alt="facebook"></img>
+                        <img src={tweet} alt="twitter"></img>
+                        <img src={tele} alt="telegram"></img>
+                    </div>
+                    <hr className="hr"></hr>
+                </div>
+            </div>
+            <div className="ends">
             <div className="and">
                 <p className="shops">Shop</p>
                 <ul className="all">
@@ -34,8 +62,10 @@ const Footer = () => {
                     <br></br>
                 </ul>
                 
+                </div>
             </div>
         </div>
+        
         );
 }
  

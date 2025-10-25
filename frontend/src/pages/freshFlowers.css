@@ -1,0 +1,67 @@
+
+.booq{
+    background-image: url("../assets/fresh-bouquet.png");
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    
+
+}
+.snows{
+    margin-bottom: -6px;
+    
+    width: 373px;
+}
+
+.flowers{
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    margin-top: 110px;
+    margin-left: 60px;
+    
+    
+    
+}
+
+/*tablet view*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .booq{
+        height: 500px;
+    }
+    .flowers{
+        font-size: 60px;
+        text-align: center;
+        justify-self: center;
+        margin-top: 200px;
+        white-space: nowrap;
+    }
+    .snow{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .snows{
+        width: 381px;
+        border: 1px solid black;
+    }
+}
+
+/*desktop view*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    #freshers{
+        display: flex;
+        
+    }
+    .booq{
+        width: 530px;
+    }
+    .snows{
+        width: 244px;
+    }
+    .snow{
+        margin-bottom: 5px;
+    }
+
+}

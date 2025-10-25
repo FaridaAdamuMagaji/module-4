@@ -8,7 +8,22 @@ html, body, #root {
 body{
   border: 1px solid black;
 }
-nav{
+
+.list{
+  list-style: none;
+  height: 15px;
+  margin-top: 0px;
+}
+.lists{
+  display: none;
+}
+.sign{
+  font-size: 16px;
+  font-family: 'monsterrat', sans-serif;
+  
+}
+.navbar{
+  
   
 }
 
@@ -17,16 +32,21 @@ nav{
   justify-content: space-between;
   align-content: space-between; 
   border-bottom: 1px solid black;
+  
+  
 }
 #menu{
   padding: 4px;
   border-right: 1px solid black;
+  height: 30px;
+  
   
 }
 
 #shop{
   padding: 4px;
   border-left: 1px solid black;
+  height: 36px;
   
   
 }
@@ -418,6 +438,15 @@ input{
     padding: 50px;
     
   }
+  #menu{
+    height: 50px;
+  }
+  #shop{
+    height: 50px;
+  }
+  .lists{
+    display: none;
+  }
   h1{
     font-size: 64px;
   }
@@ -432,7 +461,6 @@ input{
   #experience{
     font-size: 14px;
     margin-top: 60px;
-    border: 1px solid black;
     font-family: 'monsterrat', sans-serif;
     margin-left: 30px;
     margin-right: 30px;
@@ -696,6 +724,237 @@ input{
   .ender{
     padding: 10px;
   }
+}
 
+/*Laptop view*/
+
+@media only screen and (min-width: 1024px) and (max-width: 2560px) {
+  body{
+    border: 1px solid black;
+  }
+  #menu{
+    display: none;
+
+  }
+  .lists{
+    display: block;
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    gap: 40px;
+    margin: 20px;
+  }
+  .signs{
+    /*border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;*/
+    
+  }
+  #shop{
+    display: none;
+  }
+  h1{
+    font-size: 50px;
+  }
+  .kyiv{
+    padding: 20px;
+    padding-left: 40px;
+  }
+  .discover{
+    font-size: 18px;
+  }
+  #vase{
+    height: 220px;
+    width: 180px;
+  }
+  #flowy{
+    margin-top: 39px;
+    border-bottom: 1px solid black;
+  }
+  #experience{
+    font-size: 13px;
+    margin: auto;
+    padding-left: 20px;
+    /*margin-top: -25px;*/
+    
+  }
+  
+  .laptops{
+    display: flex;
+  }
+  .lap{
+    justify-content: flex-start;
+  }
+  .laptop{
+    justify-content: flex-end;
+  }
+  .fresh{
+    height: 290px;
+    width: 270px;
+  }
+  .left{
+    height: 210px;
+    width: 200px;
+    border-left: 1px solid black;
+  }
+  .right{
+    height: 200px;
+    width: 200px;
+  }
+  #dried{
+    height: 290px;
+    width: 262px;
+  }
+  .box{
+    font-size: 30px;
+    color: black;
+  }
+  
+  .now{
+    font-size: 16px;
+  }
+  .boxes{
+    font: 30px;
+    color: black;
+  }
+  .nows{
+    font-size: 16px;
+  }
+  #second{
+    display: flex;
+    border: 1px solid black;
+    
+  }
+  h2{
+    white-space: nowrap;
+  }
+  .stories{
+    border: 1px solid black;
+    margin-left: 238px;
+    padding: 16px;
+    
+  }
+  .story{
+    font-size: 14px;
+  }
+  .style{
+    font-size: 38px;
+  }
+  .at{
+    font-size: 16px;
+  }
+  .wise{
+    display: flex;
+    
+  }
+  .why{
+    width: 176px;
+    white-space: nowrap;
+
+  }
+  .whys{
+    margin-left: 28px;
+    padding-left: -80px;
+  }
+  .luxy{
+    display: flex;
+    flex-direction: row-reverse;
+  
+  }
+  #lux{
+    height: 520px;
+    width: 532px;
+  }
+  .follow{
+    font-size: 38px;
+    white-space: nowrap;
+    border: none;
+    color: black;
+
+  }
+  .follows{
+    width: 480px;
+    height: 89px;
+  }
+  #instag{
+    height: 24px;
+    width: 24px;
+    
+  }
+  .contact{
+    
+  }
+  .contacts{
+    width: 490px;
+    height: 360px;
+    
+    
+  }
+  .social{
+    border-left: 1px solid black;
+    border-bottom: none;
+  }
+  .booked{
+    width: 50px;
+  }
+  .input{
+    width: 100px;
+    height: 50px;
+  }
+  .book{
+    width: 160px;
+    
+
+  }
+  .container{
+    margin-top: -60px;
+    border: 1px solid black;
+    height: 250px;
+  }
+  .serves{
+    display: flex;
+    border-top: 1px solid black;
+  }
+  #lux{
+    width: 530px;
+    height: 530px;
+  }
+  .service{
+    padding-top: 60px;
+  }
+  #decorate{
+    width: 1022px;
+    margin-top: -19px;
+    
+  }
+  #floral{
+    display: block;
+  }
+  .part{
+    display: flex;
+  }
+  .inputs{
+    width: 120px;
+  }
+  .books{
+    width: 230px;
+
+  }
+  .socials{
+    width: 60px;
+    height: 20px;
+  }
+  .all{
+    justify-content: center;
+    white-space: nowrap;
+  }
+  .and{
+    margin-right: -130px;
+  }
+  .ender{
+    padding-right: 95px;
+  }
+  
 
 }
+  
