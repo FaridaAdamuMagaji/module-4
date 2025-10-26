@@ -1,0 +1,61 @@
+.drys{
+    background-image: url("../assets/jewel-toned.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+}
+.flowers{
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    margin-top: 110px;
+    margin-left: 60px;
+}
+
+.snowie{
+    height: 320px;
+    width: 373px;
+    margin-bottom: -6px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
+    
+}
+/*tablet view*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .drys{
+        height: 500px;
+    }
+    .snow{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .snowie{
+        width: 382px;
+        border-right: 1px solid black;
+    }
+}
+
+/*desktop view*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .freshners{
+        display: inline-flex;
+        margin: auto;
+        
+    }
+    .flowers{
+        font-size: 52px;
+    }
+    .drys{
+        height: 530px;
+        width: 530px;
+    }
+    .snow{
+        border-left: 1px solid black;
+        margin-bottom: 0px;
+    }
+    .snowie{
+        width: 245px;
+    }
+}

@@ -20,6 +20,8 @@ import google from "../assets/google-logo.png";
 import Footer from "../components/footer";
 
 import FreshFlowers from "../pages/freshFlowers";
+import DriedFlowers from "./driedFlowers";
+import LivePlants from "./livePlants";
 import { Link } from "react-router-dom";
 
 
@@ -58,14 +60,14 @@ function Home() {
         <div className="right">
           <p className="boxes">Dried Flowers</p>
           <img src={left} alt="arrow"></img>
-          <Link to="/" className="nows">Shop now</Link>
+          <Link to="/driedFlowers" className="nows">Shop now</Link>
           
         </div>
       </div>
       <div id="flows">
         <div className="left">
           <p className="box">Live Plants</p>
-          <a className="now">Shop now</a>
+          <Link to="/livePlants" className="now">Shop now</Link>
           <img src={arrow} alt="arrow"></img>
         </div>
         <img className="fresh" src={live} alt="plant"></img>

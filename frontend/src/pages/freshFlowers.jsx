@@ -36,7 +36,7 @@ const FreshFlowers = () => {
                     <img className="snows" src={rosy} alt={rosy}></img>
                     <img className="snows" src={majesty} alt={majesty}></img>
                     <img className="snows" src={blossom} alt={blossom}></img>
-                </div>
+            </div>
             </div>
             <Footer />
             
