@@ -1,11 +1,13 @@
-.lives{
-    background-image: url("../assets/lavender.jpg");
+.frys{
+    background-image: url("../assets/summer.jpg");
+    background-size: cover;
+    /*
     background-size: cover;
     background-position: center;
-    height: 320px;
+    height: 320px;*/
 }
 .flowers{
-    position: absolute;
+    /*position: absolute;*/
     font-size: 40px;
     color: white;
     margin-top: 110px;
@@ -23,7 +25,7 @@
 }
 /*tablet view*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-    .lives{
+    .frys{
         height: 500px;
     }
     .snow{
@@ -47,7 +49,7 @@
     .flowers{
         font-size: 52px;
     }
-    .lives{
+    .frys{
         height: 530px;
         width: 530px;
     }

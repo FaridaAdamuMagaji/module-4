@@ -22,6 +22,8 @@ import Footer from "../components/footer";
 import FreshFlowers from "../pages/freshFlowers";
 import DriedFlowers from "./driedFlowers";
 import LivePlants from "./livePlants";
+import AromaCandles from "./aromaCandles";
+import Freshners from "./freshners";
 import { Link } from "react-router-dom";
 
 
@@ -77,14 +79,14 @@ function Home() {
         <div className="right">
           <p className="boxes">Aroma Candels</p>
           <img src={left} alt="arrow"></img>
-          <a className="nows">Shop now</a>
+          <Link to="/aromaCandles" className="nows">Shop now</Link>
           
         </div>
       </div>
       <div id="flows">
         <div className="left">
           <p className="box">Freshners</p>
-          <a className="now">Shop now</a>
+          <Link to="/freshners" className="now">Shop now</Link>
           <img src={arrow} alt="arrow"></img>
         </div>
         <img className="fresh" src={freshner} alt="freshner"></img>

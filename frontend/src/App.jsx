@@ -7,6 +7,8 @@ import categoryPage from "./pages/category";
 import FreshFlowers from "./pages/freshFlowers";
 import DriedFlowers from "./pages/driedFlowers";
 import LivePlants from "./pages/livePlants";
+import AromaCandles from "./pages/aromaCandles";
+import Freshners from "./pages/freshners";
 
 
 
@@ -19,6 +21,8 @@ function App() {
         <Route path="/freshFlowers" element={<FreshFlowers />}></Route>
         <Route path="/driedFlowers" element={<DriedFlowers />}></Route>
         <Route path="/livePlants" element={<LivePlants />}></Route>
+        <Route path="/aromaCandles" element={<AromaCandles />}></Route>
+        <Route path="/freshners" element={<Freshners />}></Route>
         
       </Routes>
     </Router>

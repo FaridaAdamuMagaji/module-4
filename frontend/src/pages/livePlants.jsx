@@ -16,21 +16,21 @@ const LivePlants = () => {
             <Navbar />
             <div className="freshners">
                             <div className="dry">
-                                <div className="drys">
-                                    <p className="flowers">Dried Flowers</p>
+                                <div className="lives">
+                                    <p className="flowers">Live Plants</p>
                                 </div>
                             </div>
                             <div className="snow">
                                 <img className="snowie" src={flower} alt={flower}></img>
-                                <img className="snowie" src={bloom} alt={classicdried}></img>
-                                <img className="snowie" src={lavender} alt={eternal}></img>
-                                <img className="snowie" src={lives} alt={everlasting}></img>
-                                <img className="snowie" src={meadow} alt={jewel}></img>
-                                <img className="snowie" src={morning} alt={ornate}></img>
-                                <img className="snowie" src={red} alt={pinkdried}></img>
-                                <img className="snowie" src={spring} alt={rusticdried}></img>
-                                <img className="snowie" src={white} alt={victoria}></img>
-                                <img className="snowie" src={flower} alt={wild}></img>
+                                <img className="snowie" src={bloom} alt={bloom}></img>
+                                <img className="snowie" src={lavender} alt={lavender}></img>
+                                <img className="snowie" src={lives} alt={lives}></img>
+                                <img className="snowie" src={meadow} alt={meadow}></img>
+                                <img className="snowie" src={morning} alt={morning}></img>
+                                <img className="snowie" src={red} alt={red}></img>
+                                <img className="snowie" src={spring} alt={spring}></img>
+                                <img className="snowie" src={white} alt={white}></img>
+                                <img className="snowie" src={flower} alt={flower}></img>
                             </div>
                         </div>
             <Footer />

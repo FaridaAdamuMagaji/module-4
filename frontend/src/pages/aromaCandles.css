@@ -1,5 +1,5 @@
-.lives{
-    background-image: url("../assets/lavender.jpg");
+.drys{
+    background-image: url("../assets/luxurious.jpg");
     background-size: cover;
     background-position: center;
     height: 320px;
@@ -23,7 +23,7 @@
 }
 /*tablet view*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-    .lives{
+    .drys{
         height: 500px;
     }
     .snow{
@@ -47,7 +47,7 @@
     .flowers{
         font-size: 52px;
     }
-    .lives{
+    .drys{
         height: 530px;
         width: 530px;
     }
