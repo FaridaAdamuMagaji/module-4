@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 import React, { useState, useEffect } from "react";
@@ -53,9 +53,9 @@ const Navbar = () => {
           {showMenuList && (
             <ul className="list">
           <li className="sign">
-            <Link to="/Sign">Sign</Link></li>
+            <Link to="/Sign">Sign in</Link></li>
           <li>
-            <Link to="/Cart">Cart</Link>
+            <Link to="/productPage">Cart</Link>
           </li>
         </ul>
         
@@ -63,7 +63,7 @@ const Navbar = () => {
           )}
            <ul className="lists">
           <li className="sign">Sign</li>
-          <li>Cart</li>
+          <Link to="/productPage">Cart</Link>
         </ul>
         </div>
 
@@ -84,12 +84,12 @@ const Navbar = () => {
           {showShopList && (
             <ul className="list">
           <li className="sign">Shop</li>
-          <li>Contact</li>
+          <Link to="/aboutPage">Contact</Link>
         </ul>
           )}
           <ul className="lists">
           <li className="signs">Shop</li>
-          <li>Contact</li>
+          <Link to="/aboutPage">Contact</Link>
         </ul>
         </div>
 

@@ -9,13 +9,14 @@ import morning from "../assets/morning-dew.jpg";
 import red from "../assets/red-rose.jpg";
 import spring from "../assets/spring.jpg";
 import white from "../assets/white-rose.jpg";
+import "../pages/livePlants.css";
 
 const LivePlants = () => {
     return (
         <div>
             <Navbar />
             <div className="freshners">
-                            <div className="dry">
+                            <div className="live">
                                 <div className="lives">
                                     <p className="flowers">Live Plants</p>
                                 </div>

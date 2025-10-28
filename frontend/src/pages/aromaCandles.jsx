@@ -10,6 +10,7 @@ import oudh from "../assets/oudh.jpg";
 import peony from "../assets/peony-rose.jpg";
 import soy from "../assets/soy-wax.jpg";
 import winter from "../assets/winterfell.jpg";
+import "../pages/aromaCandles.css";
 
 const AromaCandles = () => {
     return (
@@ -17,7 +18,7 @@ const AromaCandles = () => {
             <Navbar />
             <div className="freshners">
                 <div className="dry">
-                    <div className="drys">
+                    <div className="aromas">
                         <p className="flowers">Live Plants</p>
                     </div>
                 </div>

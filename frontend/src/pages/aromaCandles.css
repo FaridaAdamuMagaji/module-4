@@ -1,4 +1,4 @@
-.drys{
+.aromas{
     background-image: url("../assets/luxurious.jpg");
     background-size: cover;
     background-position: center;
@@ -23,7 +23,7 @@
 }
 /*tablet view*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-    .drys{
+    .aromas{
         height: 500px;
     }
     .snow{
@@ -47,7 +47,7 @@
     .flowers{
         font-size: 52px;
     }
-    .drys{
+    .aromas{
         height: 530px;
         width: 530px;
     }

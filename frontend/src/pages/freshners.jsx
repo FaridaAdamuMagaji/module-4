@@ -10,6 +10,7 @@ import pink from "../assets/pink-peonies.jpg";
 import posy from "../assets/posy.jpg";
 import summer from "../assets/summer.jpg";
 import yellow from "../assets/yellow-rose.jpg";
+import "../pages/freshners.css";
 
 
 const Freshners = () => {

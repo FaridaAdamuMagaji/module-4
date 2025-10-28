@@ -9,7 +9,8 @@ import DriedFlowers from "./pages/driedFlowers";
 import LivePlants from "./pages/livePlants";
 import AromaCandles from "./pages/aromaCandles";
 import Freshners from "./pages/freshners";
-
+import ProductPage from "./pages/productPage";
+import AboutPage from "./pages/aboutPage";
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
         <Route path="/livePlants" element={<LivePlants />}></Route>
         <Route path="/aromaCandles" element={<AromaCandles />}></Route>
         <Route path="/freshners" element={<Freshners />}></Route>
+        <Route path="/productPage" element={<ProductPage />}></Route>
+        <Route path="/aboutPage" element={<AboutPage />}></Route>
         
       </Routes>
     </Router>
