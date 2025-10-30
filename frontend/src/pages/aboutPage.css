@@ -1,4 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Tangerine:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+
+.store{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#round{
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 15px;
+    margin-right: 5px;
+}
+#rounds{
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 14px;
+    margin-right: 10px;
+}
+
 #ours{
     font-size: 34px;
     
+}
+#outs{
+    font-size: 20px;
+    font-family: "Great Vibes", cursive;
+    font-style: italic;
+}
+.bee{
+    font-size: 34px;
+    
+}
+#founder{
+    height: 400px;
+    width: 373px;
+}
+.find{
+    text-align: center;
+}
+.cent{
+    text-align: left;
+    padding: 10px;
+}
+.cents{
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
+.found{
+    font-size: 12px;
+}
+.pass{
+    font-size: 26px;
+}
+.founded{
+    font-size: 16px;
+}
+#craft{
+    height: 400px;
+    width: 373px;
+}
+.crafted{
+    font-size: 26px;
+}
+.pride{
+    font-size: 16px;
+}
+.beauty{
+    font-size: 34px;
+    font-weight: bold;
+    color: black;
+}
+.collect{
+    font-size: 18px;
+}
+.know{
+    color: white;
+    background-color: black;
+    width: 270px;
+    border-radius: 0;
+}
+
+/*tablet view*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    #ours{
+        font-size: 50px;
+    }
+    #outs{
+        font-size: 28px;
+    }
+    .bee{
+        font-size: 50px;
+    }
+    .any{
+        font-size: 18px;
+        font-family: "ABeeZee", sans-serif;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #round{
+        margin-right: 30px;
+    }
+    #rounds{
+        margin-right: 30px;
+    }
+    #founder{
+        height: 500px;
+        width: 766px;
+    }
+    .find{
+        padding: 60px;
+    }
+    .found{
+        font-size: 14px;
+    }
+    .pass{
+        font-size: 38px;
+    }
+    .founded{
+        font-size: 16px;
+    }
+    #craft{
+        height: 500px;
+        width: 766px;
+    }
+    .crafted{
+        font-size: 38px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .pride{
+        font-size: 16px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .beauty{
+        font-size: 50px;
+    }
+    .collect{
+        font-size: 18px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .cents{
+        padding-bottom: 70px;
+    }
+}
+
+/*laptop view*/
+@media only screen and (min-width: 1024px) and (max-width: 1440px){
+    #bout{
+        display: flex;
+    }
+    #founder{
+        width: 500px;
+        height: 700px;
+    }
+    .any{
+        font-size: 18px;
+        padding: 0;
+    }
+    .store{
+        padding: 20px;
+    }
+    .find{
+        border-top: 1px solid black;
+        margin-top: -7px;
+    }
+    .crafts{
+        display: flex;
+        border-top: 1px solid black;
+    }
+    #craft{
+        width: 500px;
+        
+    }
+    .cent{
+        
+    }
+    .crafted{
+        white-space: nowrap;
+    }
+    .pride{
+        font-size: 16px;
+        
+    }
 }
