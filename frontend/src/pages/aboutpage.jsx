@@ -47,14 +47,14 @@ const AboutPage = () => {
                     <p className="pride">At Kyiv LuxeBouquets, we take pride in our team of talented and experienced florists who carefully select each bloom, ensuring that only the freshest and most stunning flowers make it into our bouquets. We work directly with farms to source the highest quality flowers, and our skilled florists expertly craft each bouquet to perfection.</p>
                 </div>
             </div>
-            <div>
+            <div className="gifts">
                 <img id="craft" src={gift} alt={gift}></img>
                 <div className="cent">
                     <p className="crafted">Bouquets, Gifts & Ambiance</p>
                     <p className="pride">In addition to our stunning bouquets, we also offer a collection of dried bouquets, house plants, and fragrant candles from luxury brands to create the perfect ambiance. We believe that sending flowers, plants, and gifts should be easy and stress-free, which is why we offer same or next-day delivery throughout Kyiv.</p>
                 </div>
             </div>
-            <div>
+            <div className="crafts">
                 <img id="craft" src={heel} alt={heel}></img>
                 <div className="cent">
                     <p className="crafted">Making Every Day Special</p>

@@ -24,6 +24,8 @@ import DriedFlowers from "./driedFlowers";
 import LivePlants from "./livePlants";
 import AromaCandles from "./aromaCandles";
 import Freshners from "./freshners";
+import AboutPage from "./aboutPage";
+import CheckoutPage from "./checkoutPage";
 import { Link } from "react-router-dom";
 
 
@@ -95,7 +97,7 @@ function Home() {
       </div>
       
       <div id="second">
-        <h2>About us</h2>
+        <Link to="/aboutPage"><h2>About us</h2></Link>
       <div className="stories">
         <p className="story">OUR STORY</p>
         <p className="style">Kyiv LuxeBouquets</p>
@@ -211,7 +213,7 @@ function Home() {
         </div>
       </div>
       <div id="decorate">
-        <p className="vice">SERVICE</p>
+        <Link to="/checkoutPage" className="vice">SERVICE</Link>
         <p className="wed">Wedding & event decor</p>
         <p className="vices">Let our team of expert florists and designers create stunning, on-trend <span id="floral">floral décor for your special day. Trust us to bring your vision to life.</span></p>
         <p className="inquire">INQUIRE NOW</p>

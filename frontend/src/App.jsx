@@ -11,6 +11,7 @@ import AromaCandles from "./pages/aromaCandles";
 import Freshners from "./pages/freshners";
 import ProductPage from "./pages/productPage";
 import AboutPage from "./pages/aboutPage";
+import CheckoutPage from "./pages/checkoutPage";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/freshners" element={<Freshners />}></Route>
         <Route path="/productPage" element={<ProductPage />}></Route>
         <Route path="/aboutPage" element={<AboutPage />}></Route>
+        <Route path="/checkoutPage" element={<CheckoutPage />}></Route>
         
       </Routes>
     </Router>

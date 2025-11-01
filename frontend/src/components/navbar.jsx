@@ -89,7 +89,7 @@ const Navbar = () => {
           )}
           <ul className="lists">
           <li className="signs">Shop</li>
-          <Link to="/aboutPage">Contact</Link>
+          <li>Contact</li>
         </ul>
         </div>
 
