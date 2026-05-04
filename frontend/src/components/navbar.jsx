@@ -1,10 +1,17 @@
 
 import { Link } from "react-router-dom";
 
-
+import SigninPage from "../pages/signinpage";
 import React, { useState, useEffect } from "react";
 import shop from "../assets/shopping-bag.png";
 import menu from "../assets/menu.png";
+import insta from "../assets/insta.png";
+import pint from "../assets/pinterest.png";
+import face from "../assets/facebook.png";
+import tweet from "../assets/twitter.png";
+import tele from "../assets/telegram.png";
+import close from "../assets/close-button.png";
+
 
 const Navbar = () => {
   const [showMenuList, setShowMenuList] = useState(false);
@@ -29,6 +36,7 @@ const Navbar = () => {
     const handleOutsideClick = () => {
       setShowMenuList(false);
       setShowShopList(false);
+        document.body.classList.remove("blur-active");
     };
     document.addEventListener("click", handleOutsideClick);
     return () => {
@@ -52,11 +60,30 @@ const Navbar = () => {
           )}
           {showMenuList && (
             <ul className="list">
-          <li className="sign">
-            <Link to="/Sign">Sign in</Link></li>
-          <li>
-            <Link to="/productPage">Cart</Link>
-          </li>
+              <div id="close">
+                <img src={close} alt={close}></img>
+              </div>
+              
+          <ul className="sign">
+            <Link to="/signinPage"><li className="men">Sign in</li></Link></ul>
+            <li className="men">Shop</li>
+            <li className="men">Service</li>
+            <li className="men">Contact</li>
+            <li className="men">About us</li>
+            <Link to="/productPage"><li className="men">Cart</li></Link>
+          <div id="return">
+          <li id="returns">Shipping & Returns</li>
+          <li id="returns">Terms &Conditions</li>
+          <li id="returns">Privacy policy</li>
+          </div>
+          <div>
+            <img id="menus" src={insta} alt={insta}></img>
+            <img id="menus" src={pint} alt={pint}></img>
+            <img id="menus" src={face} alt={face}></img>
+            <img id="menus" src={tweet} alt={tweet}></img>
+            <img id="menus" src={tele} alt={tele}></img>
+          </div>
+          
         </ul>
         
             
@@ -82,8 +109,8 @@ const Navbar = () => {
             />
           )}
           {showShopList && (
-            <ul className="list">
-          <li className="sign">Shop</li>
+            <ul className="lit">
+          <li className="sin">Shop</li>
           <Link to="/aboutPage">Contact</Link>
         </ul>
           )}

@@ -12,7 +12,7 @@ import Freshners from "./pages/freshners";
 import ProductPage from "./pages/productPage";
 import AboutPage from "./pages/aboutPage";
 import CheckoutPage from "./pages/checkoutPage";
-
+import SigninPage from "./pages/signinpage";
 
 function App() {
   return (
@@ -28,6 +28,8 @@ function App() {
         <Route path="/productPage" element={<ProductPage />}></Route>
         <Route path="/aboutPage" element={<AboutPage />}></Route>
         <Route path="/checkoutPage" element={<CheckoutPage />}></Route>
+        <Route path="/signinPage" element={<SigninPage />}></Route>
+        
         
       </Routes>
     </Router>
