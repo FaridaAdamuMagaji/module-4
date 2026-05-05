@@ -11,7 +11,7 @@ import face from "../assets/facebook.png";
 import tweet from "../assets/twitter.png";
 import tele from "../assets/telegram.png";
 import close from "../assets/close-button.png";
-
+import rosy from "../assets/rosy.png";
 
 const Navbar = () => {
   const [showMenuList, setShowMenuList] = useState(false);
@@ -64,6 +64,7 @@ const Navbar = () => {
                 <img src={close} alt={close}></img>
               </div>
               
+              
           <ul className="sign">
             <Link to="/signinPage"><li className="men">Sign in</li></Link></ul>
             <li className="men">Shop</li>
@@ -109,14 +110,19 @@ const Navbar = () => {
             />
           )}
           {showShopList && (
-            <ul className="lit">
-          <li className="sin">Shop</li>
-          <Link to="/aboutPage">Contact</Link>
-        </ul>
+            
+            <div className="shoplist">
+              <div>
+                <img src={close} alt={close}></img>
+                <img id="ros" src={rosy} alt={rosy}></img>
+              </div>
+              
+              
+        </div>
           )}
           <ul className="lists">
-          <li className="signs">Shop</li>
-          <li>Contact</li>
+            <img src={close} alt={close}></img>
+          
         </ul>
         </div>
 
